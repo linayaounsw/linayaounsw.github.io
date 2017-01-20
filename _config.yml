@@ -1,12 +1,12 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: LINA LAB
+url: "linayao.com"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: LINA LAB.
 
 # Author details for the jekyll-seo-tag gem
 author:
@@ -16,9 +16,9 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: LINA LAB
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - https://github.com/linayaounsw
 
 collections:
   staff_members:
@@ -48,7 +48,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "clients"
+      type: "projects"
     values:
       layout: "client"
   - scope:
