@@ -48,7 +48,7 @@ defaults:
       layout: "post"
   - scope:
       path: ""
-      type: "projects"
+      type: "clients"
     values:
       layout: "client"
   - scope:
