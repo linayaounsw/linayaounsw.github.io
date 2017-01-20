@@ -1,9 +1,15 @@
 links:
-- name: Portfolio
-  link: /portfolio/
-- name: Blog
+- name: Home
+  link: /
+- name: People
+  link: /people/
+- name: Publication
+  link: /publication/
+- name: opensource
+  link: /opensource/
+- name: Calendar
+  link: /calendar/
+- name: GroupWiki
   link: /blog/
-- name: About
-  link: /about/
 - name: Contact
   link: /contact/
