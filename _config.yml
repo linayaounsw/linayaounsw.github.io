@@ -14,12 +14,6 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 
-# Social details for the jekyll-seo-tag gem
-social:
-  name: LINA LAB
-  links:
-    - https://github.com/linayaounsw
-
 collections:
   staff_members:
     output: false
