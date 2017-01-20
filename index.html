@@ -4,30 +4,27 @@ title: Urban
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2 class="editable">We build websites</h2>
-		<p class="subtext editable">This is the <strong>Urban</strong> template from <a href="http://cloudcannon.com/">CloudCannon</a>. Urban is a strong foundation for the web presence of your agency.</p>
-		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
-	</div>
-</section>
-
-<section class="diagonal patterned">
-	<div class="container halves">
-		<div>
-			<h3 class="editable">Some of our work</h3>
-			<p class="editable">We take pride in our previous work and our happy customers. We cater to any sector to boost business and increase exposure.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
-		</div>
-		<div>
-			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
-				{% endfor %}
-			</ul>
-		</div>
+		<h2 class="editable">Lina Lab</h2>
+		<p class="subtext editable">Our group's research mainly involves: </p>
+		<ul style="color:white">Anomaly detection: &nbsp <a href="http://www.cse.unsw.edu.au/~z5122290/">Manqing Dong</a> &nbsp <a href="https://githubningxiaodong.github.io/">Xiaodong Ning</a></ul>
+		<ul style="color:white">Recommendation system:&nbsp <a href="http://www.cse.unsw.edu.au/~z5122282/">Shuai Zhang</a>&nbsp <a href="http://www.cse.unsw.edu.au/~chaoranh/"> Chaoran Huang</a></ul>
+		<ul style="color:white">Activity recognition: &nbsp <a href="http://1015xzhang.wixsite.com/mysite">Xiang Zhang</a></ul>
 	</div>
 </section>
 
 <section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Group News</h3>
+			<p class="editable">1. Contest participation: Manqing dong, chaoran huang, shuai zhang join the IJCAI 2017 Alibaba Tianchi Contest</p>
+			<p class="editable">2. Grant Awarded:Research Infrastructure Scheme, CI, UNSW, 2017</p>
+			<p class="editable">3. Grant Awarded:The National Natural Science Foundation of China (NSFC), International Partner Investigator, 2017 - 2019</p>
+		</div>
+
+	</div>
+</section>
+
+<!--<section class="diagonal alternate">
 	<div class="container halves">
 		<div>
 			<ul class="image-list">
@@ -40,4 +37,4 @@ title: Urban
 			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
 		</div>
 	</div>
-</section>
+</section>-->
