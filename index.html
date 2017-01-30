@@ -12,7 +12,7 @@ title: Urban
 	</div>
 </section>
 
-<section class="diagonal alternate">
+<section class="diagonal patterned">
 	<div class="container halves">
 		<div>
 			<h3 class="editable">Group News</h3>
@@ -24,17 +24,27 @@ title: Urban
 	</div>
 </section>
 
-<!--<section class="diagonal alternate">
+<!--
+<section class="diagonal alternate">
 	<div class="container halves">
-		<div>
-			<ul class="image-list">
-				<li><img src="{{ site.baseurl }}/images/cloudcannon-logo-blue.svg" width="250" style="margin-bottom: 40px;"></li>
-				<li><img src="{{ site.baseurl }}/images/jekyll-logo-black-red-transparent.png" width="300"></li>
+		<div >
+			<ul class="image-list" width="700px" height="500px">
+				<li><img  id="imgs" src="{{ site.baseurl }}/images/members/all.jpg"  style="margin-bottom: 10px;"></li>
 			</ul>
 		</div>
-		<div>
-			<h3 class="editable">Latest software, greatest perfomance</h3>
-			<p class="editable">As a new agency we get reap the benefits of the latest and greatest. We build our websites with the most up to date technology. This ensures your website is fast, efficient and reliable for many years.</p>
-		</div>
 	</div>
-</section>-->
+
+</section>
+
+<script language="javascript"> 
+setInterval(test,5000); 
+var array=new Array(); 
+var index=0; 
+var array= new Array("/images/members/all.jpg","/images/members/UNSW_Sydney.png"); 
+function test() 
+{ var myimg=document.getElementById("imgs"); 
+if(index==array.length-1) 
+{ index=0; }else{ index++; } 
+myimg.src=array[index]; 
+} 
+</script> -->
