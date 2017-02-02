@@ -55,7 +55,7 @@ header {
 }
 
 section {
-	padding: 150px 0;
+	padding: 100px 0;
 	background: #fff;
 	margin-top: -2px;
 
@@ -78,7 +78,7 @@ section {
 		background: $brand-color;
 		text-align: left;
 		margin-top: -100px;
-		padding-top: 250px;
+		padding-top: 230px;
 
 		h2, p {
 			max-width: 90%;
@@ -104,6 +104,55 @@ section {
 	}
 }
 
+#sectionpic {
+	padding: 3px 0;
+	background: #55515F;
+	margin-top: -2px;
+
+	&.diagonal {
+		-webkit-transform: skewY(-$section-rotation);
+		-moz-transform: skewY(-$section-rotation);
+		-ms-transform: skewY(-$section-rotation);
+		transform: skewY(-$section-rotation);
+
+		> div {
+			-webkit-transform: skewY($section-rotation);
+			-moz-transform: skewY($section-rotation);
+			-ms-transform: skewY($section-rotation);
+			transform: skewY($section-rotation);
+		}
+	}
+
+	&.hero {
+		color: #8BB8FC;
+		background: #8BB8FC;
+		text-align: left;
+		margin-top: -100px;
+		padding-top: 0px;
+
+		h2, p {
+			max-width: 90%;
+		}
+
+		h2 {
+			font-size: 3.5rem;
+		}
+
+		p {
+			font-size: 1.8rem;
+			color: #fff;
+		}
+
+		a:not(.button) {
+			color: #8BB8FC;
+			font-style: italic;
+		}
+	}
+
+	&.alternate {
+		background: #eee;
+	}
+}
 .button {
 	padding: 13px 38px;
 	border-radius: 3px;
