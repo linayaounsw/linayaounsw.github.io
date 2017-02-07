@@ -1,5 +1,5 @@
 ---
-name: incoming members
-position: 
-image_path: "/images/members/UNSW_Sydney.png"
+name: ChunGuang Li
+position: Visiting Scholar 2017 - present
+image_path: "/images/members/lcg.jpg"
 ---
