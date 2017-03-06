@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine learning tutorial for beginners</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><h1 id="machine-learning-tutorial-for-beginners">Machine learning tutorial for beginners</h1>
+
+<p>Questions like “What is the stock price of next day?” or “What is the weather tomorrow?” is very difficult to give answer because there is no perfect algorithm can predict the future with numerical calculation.  <strong>Machine learning</strong><a href="#fn:machinelearning" id="fnref:machinelearning" title="See footnote" class="footnote">1</a> was born for this, which is subfield of computer science that gives computers the ability to learn without being explicitly programmed. There are many articles and paper discuss about what is machine learning and how to conduct experiments on machine learning,  this  will not explain the definition and concept that can be searched easily on the internet. I will go through the steps that people normally confused and get stuck in.  </p>
+
+<blockquote>
+  <p><strong>Machine Learning solves the problem that cannot be solved by numerical means alone. </strong></p>
+</blockquote>
+
+<p>There are two major types of machine learning can be used very often among research and industry:</p>
+
+<ul>
+<li><strong>Supervised machine learning:</strong> The program is “trained” on a pre-defined set of “training examples”, which then facilitate its ability to reach an accurate conclusion when given new data.</li>
+<li><strong>Unsupervised machine learning:</strong> The program is given a bunch of data and must find patterns and relationships therein.</li>
+</ul>
+
+<hr>
+
+
+
+<h2 id="supervised-machine-learning">Supervised Machine Learning</h2>
+
+<p>In supervised learning, the ultimate goal is the find out the perfect function <script type="math/tex" id="MathJax-Element-55">h(x)</script> (called hypothesis in machine learning) can calculate the result based on given data. The “learning” is normally a sophisticated mathematical calculation process for find the best parameters of the hypothesis function. Supervised learning also can divide into classification and regression process. Classification means samples belong to two or more classes and we want to learn from already labeled data how to predict the class of unlabeled data. An example of classification problem would be the handwritten digit recognition example, in which the aim is to assign each input vector to one of a finite number of discrete categories.  Regression means if the desired output consists of one or more continuous variables, then the task is called regression. An example of a regression problem would be the prediction of the length of a salmon as a function of its age and weight.</p>
+
+<h2 id="simple-machine-learning-project-in-python-step-by-step">Simple Machine Learning Project in Python Step-By-Step</h2>
+
+<p>The general steps of a machine learning program is defined as:</p>
+
+<ol>
+<li>Environment Installation.</li>
+<li>Define Problem</li>
+<li>Prepare Data.</li>
+<li>Implement Algorithms.</li>
+<li>Evaluate Results. <br>
+<hr></li>
+</ol>
+
+<p><strong>Environment Installation</strong></p>
+
+<hr>
+
+<p>It is highly recommend that using the Linux/UNIX for the machine learning environment set up,  I will use <strong>Ubuntu</strong><a href="#fn:ubuntu" id="fnref:ubuntu" title="See footnote" class="footnote">2</a> here.  <strong>Scikit-learn</strong><a href="#fn:scikitlearn" id="fnref:scikitlearn" title="See footnote" class="footnote">3</a> is used as the library of machine learning algorithm provider. </p>
+
+<p>Install the dependencies on Ubuntu</p>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs bash">$ <span class="hljs-built_in">sudo</span> apt-get install python
+$ <span class="hljs-built_in">sudo</span> python -m pip install --upgrade pip
+$ <span class="hljs-built_in">sudo</span> pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+$ <span class="hljs-built_in">sudo</span> pip install -U scikit-learn</code></pre>
+
+<p>For Mac OS user, Homebrew is a very efficient package manager, the install are nearly the same as Ubuntu:</p>
+
+
+
+<pre class="prettyprint"><code class="language-sh hljs bash">$ /usr/bin/ruby <span class="hljs-operator">-e</span> <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span>
+$ <span class="hljs-built_in">sudo</span> brew install python
+$ <span class="hljs-built_in">sudo</span> python -m pip install --upgrade pip
+$ <span class="hljs-built_in">sudo</span> pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+$ <span class="hljs-built_in">sudo</span> pip install -U scikit-learn</code></pre>
+
+<hr>
+
+<p><strong>Define Problem</strong></p>
+
+<hr>
+
+<p>In general, a learning problem considers a set of n samples of data and then tries to predict properties of unknown data. If each sample is more than a single number and, for instance, a multi-dimensional entry (aka multivariate data), it is said to have several attributes or features. <br>
+Machine learning is about learning some properties of a data set and applying them to new data. This is why a common practice in machine learning to evaluate an algorithm is to split the data at hand into two sets, one that we call the training set on which we learn data properties and one that we call the testing set on which we test these properties.</p>
+
+<hr>
+
+<p><strong>Prepare Data</strong></p>
+
+<hr>
+
+<p>The Iris flower data set or Fisher’s Iris data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson’s Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species.Two of the three species were collected in the Gaspé Peninsula “all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus”.<a href="#fn:iris" id="fnref:iris" title="See footnote" class="footnote">4</a>
+
+</p><p>Firstly, we start a python interpreter to load the iris dataset.</p>
+
+
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-prompt">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> sklearn <span class="hljs-keyword">import</span> datasets
+<span class="hljs-prompt">&gt;&gt;&gt; </span>iris = datasets.load_iris()
+<span class="hljs-prompt">&gt;&gt;&gt; </span>digits = datasets.load_digits()</code></pre>
+
+<hr>
+
+<p><strong>Implement Algorithm</strong></p>
+
+<hr>
+
+<pre class="prettyprint"><code class="language-python hljs "><span class="hljs-keyword">from</span> sklearn <span class="hljs-keyword">import</span> svm
+<span class="hljs-keyword">from</span> sklearn <span class="hljs-keyword">import</span> datasets
+clf = svm.SVC()
+iris = datasets.load_iris()
+X, y = iris.data, iris.target
+clf.fit(X, y)  
+SVC(C=<span class="hljs-number">1.0</span>, cache_size=<span class="hljs-number">200</span>, class_weight=<span class="hljs-keyword">None</span>, coef0=<span class="hljs-number">0.0</span>,
+  decision_function_shape=<span class="hljs-keyword">None</span>, degree=<span class="hljs-number">3</span>, gamma=<span class="hljs-string">'auto'</span>, kernel=<span class="hljs-string">'rbf'</span>,
+  max_iter=-<span class="hljs-number">1</span>, probability=<span class="hljs-keyword">False</span>, random_state=<span class="hljs-keyword">None</span>, shrinking=<span class="hljs-keyword">True</span>,
+  tol=<span class="hljs-number">0.001</span>, verbose=<span class="hljs-keyword">False</span>)</code></pre>
+
+<hr>
+
+<p><strong>Evaluate Results</strong></p>
+
+<hr>
+
+<pre class="prettyprint"><code class="language-python hljs ">clf.predict(digits.data[-<span class="hljs-number">1</span>:])
+array([<span class="hljs-number">8</span>])</code></pre>
+
+<p>The related image is: <br>
+<img src="http://scikit-learn.org/stable/_images/sphx_glr_plot_digits_last_image_001.png" alt="alt text" title="iris image"></p>
+
+<hr>
+
+
+
+<h2 id="great-machine-learning-libraries">Great Machine Learning Libraries</h2>
+
+<p>Good machine learning libraries work reliably, quickly, and at-scale. They can help engineers and scientists build, implement, and maintain production machine learning systems efficiently and easily. As a scientist, If we want to been able to see further, it was only because we stood on the shoulders of giants. Let’s build great machine learning algorithms base on the existing excellent libraries. <br>
+There are also some other machine learning libraries can be found:</p>
+
+<ul>
+<li><a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>: this is a Java based library with a graphical user interface that allows you to run experiments on small datasets. This is great if you restrict yourself to playing around to get a feel for what is possible with machine learning. </li>
+<li><a href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">LibSVM</a> and <a href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/">LibLinear</a>: these are C libraries for support vector machines; there are also bindings or implementations for many other languages. These are the libraries used for support vector machine learning in Scikit-learn.</li>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe</a>: is a deep learning framework made with expression, speed, and modularity in mind. It is developed by the Berkeley Vision and Learning Center (BVLC) and by community contributors. Yangqing Jia created the project during his PhD at UC Berkeley. Caffe is released under the BSD 2-Clause license. </li>
+<li><a href="https://www.tensorflow.org/">TensorFlow</a>: is an open source software library for numerical computation using data flow graphs. TensorFlow implements what are called data flow graphs, where batches of data (“tensors”) can be processed by a series of algorithms described by a graph.</li>
+<li><a href="http://www.deeplearning.net/software/theano/">Theano</a>: efficient computation of mathematical expressions using GPU. Excellent for deep learning.</li>
+<li><a href="https://deeplearning4j.org/">Deeplearning4j</a> is the first commercial-grade, open-source, distributed deep-learning library written for Java and Scala. Integrated with Hadoop and Spark, DL4J is designed to be used in business environments on distributed GPUs and CPUs.</li>
+</ul><div class="footnotes"><hr><ol><li id="fn:machinelearning"><a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning Wiki </a> is the wiki page of machine learning, where you can get a basic understanding of machine learning. <a href="#fnref:machinelearning" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:ubuntu"><a href="https://www.ubuntu.com/">Ubuntu </a> is built on Debian’s architecture and infrastructure, to provide Linux server, desktop, phone, tablet and TV operating systems. <a href="#fnref:ubuntu" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:scikitlearn"><a href="http://scikit-learn.org/stable/index.html">Scikit-learn</a> is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. <a href="#fnref:scikitlearn" title="Return to article" class="reversefootnote">↩</a></li><li id="fn:iris"><a href="https://archive.ics.uci.edu/ml/datasets/Iris">Iris</a> is  is perhaps the best known database to be found in the pattern recognition literature. Fisher’s paper is a classic in the field and is referenced frequently to this day. (See Duda &amp; Hart, for example.) The data set contains 3 classes of 50 instances each, where each class refers to a type of iris plant. One class is linearly separable from the other 2; the latter are NOT linearly separable from each other.  <a href="#fnref:iris" title="Return to article" class="reversefootnote">↩</a></li></ol></div></div></body>
+</html>
