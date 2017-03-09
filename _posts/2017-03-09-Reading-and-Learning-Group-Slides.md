@@ -1,9 +1,5 @@
 ---
 title: Reading and Learning Group Slides
-categories: 
----
----
-title: Reading and Learning Group Slides
 categories:
   - slides
 author_staff_member: shuaizhang
