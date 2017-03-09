@@ -5,10 +5,10 @@ links:
   link: /people/
 - name: Publication
   link: /publication/
-- name: GroupWiki
-  link: /blog/
 - name: Opensource
   link: /opensource/
+- name: GroupWiki
+  link: /blog/
 - name: Calendar
   link: /calendar/
 - name: Contact
