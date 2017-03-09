@@ -7,9 +7,9 @@ links:
   link: /publication/
 - name: Opensource
   link: /opensource/
-- name: Calendar
-  link: /calendar/
 - name: GroupWiki
   link: /blog/
+- name: Calendar
+  link: /calendar/
 - name: Contact
   link: /contact/
