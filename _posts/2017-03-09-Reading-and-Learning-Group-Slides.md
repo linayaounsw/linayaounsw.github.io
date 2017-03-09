@@ -1,6 +1,13 @@
 ---
 title: Reading and Learning Group Slides
-categories: Slides
+categories: 
+---
+---
+title: Reading and Learning Group Slides
+categories:
+  - slides
+author_staff_member: shuaizhang
+show_comments: true
 ---
 
 The slides for former reading group and learning group are as follows:
