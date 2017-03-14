@@ -14,3 +14,5 @@ The slides for former reading group and learning group are as follows:
 ## learning group
 * [13-Feb-2017: Introduction to Convolutional Neural Network, ShuaiZhang](https://www.slideshare.net/ShuaiZhang33/lg-cnn20170213)
 * [14-Dec-2016: Python-NumPy, ChaoranHuang](http://chopinwong.com/presentations/14Dec2016/#/)
+
+
