@@ -11,7 +11,7 @@ The slides for former reading group and learning group are as follows:
 * [06-Mar-2017: Introduction to Xgboost, ShuaiZhang](https://www.slideshare.net/ShuaiZhang33/rg-xgboost20170306)
 * [06-Feb-2017: Generating Videos with Scene Dynamics, ChaoranHuang](http://chopinwong.com/presentations/06Feb2017/)
 * [03-Apr-2016: A Hybrid Recommendation System considering Visual Information for Predicting Favorite Restaurants, ChaoranHuang](http://chopinwong.com/presentations/03Apr2017/)
-* [17-Apr-2017: GAN](https://www.slideshare.net/ShuaiZhang33/reading-group-gan-20170417)
+* [17-Apr-2017: generative adversarial networks, Shuai Zhang](https://www.slideshare.net/ShuaiZhang33/reading-group-gan-20170417)
 
 ## Learning group
 * [13-Feb-2017: Introduction to Convolutional Neural Network, ShuaiZhang](https://www.slideshare.net/ShuaiZhang33/lg-cnn20170213)
