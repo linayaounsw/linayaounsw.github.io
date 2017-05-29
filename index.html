@@ -1,0 +1,89 @@
+---
+title: InsData
+---
+
+<section class="hero diagonal">
+	<div class="container"> 
+		<!--<h2 class="editable">InsData</h2>-->
+		<p style="font-size: 1.4rem;">InsData is dedicated on getting inspriations from data via designing and developing sound and robust data management and analysis techniques and systems. We work on a wide spectrum of problems across the areas of data mining, machine learning and pervasive intelligence, especially those that arise in the application domains of Internet of Things, Cyber-Physical Systems, information filtering and recommending, and human activity recognition and modeling.</p>
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container halves">
+		<div>
+			<h3 class="editable"><font color="FF0000">News</font></h3>
+     		        <p class="editable">Congratulations to Shuai Zhang for his paper accepted in SIGIR 2017!</p>
+      			<p class="editable">Welcome Dalin Zhang to join our group in semester 1 2017</p>
+			<p class="editable">Shuai Zhang, Xiang Zhang, Manqing Dong, XiaoDong Ning join the KDD Cup 2017 contest</p>
+			<p class="editable">Welcome Kaixuan Chen to join our group in semester 1 2017</p>
+			<p class="editable">Manqing dong, Shuai Zhang, Chaoran Huang join the IJCAI 2017 Alibaba Tianchi Contest</p>
+		</div>
+
+	</div>
+</section>
+
+<section class="" id="sectionpic">
+
+  <div class="container halves">
+
+<style>
+.mySlides {display:none;height:690px;width:950px}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+</style>
+
+<div class="w3-content w3-display-container" >
+  <img class="mySlides side-crop" src="/images/members/all1.jpg" style="width:100%">
+  <img class="mySlides side-crop" src="/images/members/all2.jpg" style="width:100%">
+  <img class="mySlides side-crop" src="/images/members/all3.jpg" style="width:100%">
+  <img class="mySlides side-crop" src="/images/members/all4.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+  </div>
+</div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>

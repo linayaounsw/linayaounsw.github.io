@@ -1,0 +1,15 @@
+links:
+- name: Home
+  link: /
+- name: People
+  link: /people/
+- name: Publication
+  link: /publication/
+- name: Opensource
+  link: /opensource/
+- name: GroupWiki
+  link: /blog/
+- name: Calendar
+  link: /calendar/
+- name: Contact
+  link: /contact/
