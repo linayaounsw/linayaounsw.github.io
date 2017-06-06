@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>InsData</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/jquery.lightbox-0.5.css">
+<link rel="stylesheet" href="css/custom-styles.css">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="img/our.ico">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
+<script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script>
+<script src="js/jquery.tablesorter.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/jquery-latest.js"></script>
+<script src="js/metadata.js"></script>
+<script src="js/sorttable.js"></script>
+
+<style type="text/css">
+/* Sortable tables */
+table.sortable thead
+{
+background-color:#eee;
+color:#666666;
+font-weight: bold;
+cursor: default;
+}
+</style>
+
+</head>
+
+<body class="home">
+    <!-- Color Bars (above header)-->
+    <div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container">
+    
+      <div class="row header"><!-- Begin Header -->
+
+
+      
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+            <a href="index.htm"><img src="img/Group websites/logo.png" style="height: 80px;" alt="" /></a>
+            <h5>Inspiration of Data</h5>
+        </div>
+        
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+            <div class="navbar hidden-phone">
+            <ul class="nav">
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="People.htm">People</a></li>
+            <li><a href="Publication.htm">Publication</a></li>
+            <li><a href="Opensource.htm">Opensource</a></li>
+            <li><a href="Groupwiki.htm">Groupwiki</a></li>
+            <li><a href="Calendar.htm">Calendar</a></li>
+            </ul>
+           
+            </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="index.htm">Home</option>
+                        <!--<option value="index.htm">- Full Page</option>
+                        <option value="index-gallery.htm">- Gallery Only</option>
+                        <option value="index-slider.htm">- Slider Only</option> -->
+                    <option value="People.htm">People</option>
+                    <option value="Publication.htm">Publication</option>
+                        <!--<option value="page-full-width.htm">- Full Width</option>
+                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
+                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
+                        <option value="page-double-sidebar.htm">- Double Sidebar</option>-->
+                    <option value="Opensource.htm">Opensource</option>
+                        <!--<option value="gallery-3col.htm">- 3 Column</option>
+                        <option value="gallery-4col.htm">- 4 Column</option>
+                        <option value="gallery-6col.htm">- 6 Column</option>
+                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
+                        <option value="gallery-single.htm">- Gallery Single</option> -->
+                    <option value="Groupwiki.htm">Groupwiki</option>
+                        <!--<option value="blog-style1.htm">- Blog Style 1</option>
+                        <option value="blog-style2.htm">- Blog Style 2</option>
+                        <option value="blog-style3.htm">- Blog Style 3</option>
+                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-single.htm">- Blog Single</option>-->
+                    <option value="Calendar.htm">Calendar</option>
+                </select>
+                </div>
+                </form>
+
+        </div>
+        
+      </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+    <div class="row"><!--Container row-->
+
+    <!-- Title Header -->
+        <div class="span11"><!--Begin page content column-->
+            <h3 class="title-bg">Key Dates</h3>
+            <p class="lead">Here lists the key dates for the top conference. </p>
+
+            <table id="myTable" class="sortable" border="1" cellpadding="1" cellspacing="1"> 
+            <thead>
+                <tr>
+                    <th>Conference</th> 
+                    <th>Rank</th> 
+                    <th>Deadline</th> 
+                    <th>Time & Place</th> 
+                    <th>Full name of the Conference</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <tr> 
+                    <td>KDD</td> 
+                    <td>A*</td> 
+                    <td>2017/02/17</td> 
+                    <td><a href="http://www.kdd.org/kdd2017/">Aug. 13-17, 2017, Halifax, Nova Scotia, Canada</a></td> 
+                    <td>International Conference on Knowledge Discovery and Data Mining</td>
+                </tr> 
+                <tr> 
+                    <td>Ubicomp</td> 
+                    <td>A*</td> 
+                    <td>2017/04/15</td> 
+                    <td><a href="http://ubicomp.org/ubicomp2017/">Sept. 11-15, 2017, Maui, Hawaii</a></td> 
+                    <td>International Joint Conference on Pervasive and Ubiquitous Computing</td>
+                </tr> 
+                <tr> 
+                    <td>SIGIR</td> 
+                    <td>A*</td> 
+                    <td>2017/01/17</td> 
+                    <td><a href="http://sigir.org/sigir2017/">Aug. 7-11, 2017, Tokyo, Japan</a></td> 
+                    <td>International Conference on Research and Development in Information Retrieval</td>
+                </tr> 
+                <tr> 
+                    <td>CIKM </td> 
+                    <td>A</td> 
+                    <td>2017/05/16</td> 
+                    <td><a href="http://cikm2017.org/">Nov. 6-10, 2017, Singapore</a></td> 
+                    <td>International Conference on Information and Knowledge Management</td>
+                </tr>
+                <tr> 
+                    <td>RecSys</td> 
+                    <td>B</td> 
+                    <td>2017/04/03</td> 
+                    <td><a href="https://recsys.acm.org/recsys17/">Aug. 27-31, 2017, Como, Italy</a></td> 
+                    <td>International Conference on Recommender Systems</td>
+                </tr>
+                <tr> 
+                    <td>ICDM</td> 
+                    <td>A*</td> 
+                    <td>2017/06/05</td> 
+                    <td><a href="http://icdm2017.bigke.org/">Nov. 18-21, 2017, New Orleans, USA</a></td> 
+                    <td>International Conference on Data Mining</td>
+                </tr>
+                <tr> 
+                    <td>WSDM</td> 
+                    <td>A*</td> 
+                    <td>2017/08/11</td> 
+                    <td><a href="http://www.wsdm-conference.org/2018/v">2018, Los Angeles, California, USA</a></td> 
+                    <td>International Conference on Web Search and Data Mining</td>
+                </tr> 
+                <tr> 
+                    <td>WISE</td> 
+                    <td>A</td> 
+                    <td>2017/04/09</td> 
+                    <td><a href="http://www.wise-conferences.org/">Oct. 7-11, 2017, Puschino, Moscow Region, Russia</a></td> 
+                    <td>International Conference on Web Information Systems Engineering</td>
+                </tr> 
+                <tr> 
+                    <td>ECML</td> 
+                    <td>A</td> 
+                    <td>2017/04/13</td> 
+                    <td><a href="http://ecmlpkdd2017.ijs.si/">Sept. 18-22, 2017, Skopje, Macedonia</a></td> 
+                    <td>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Database</td>
+                </tr>
+                <tr> 
+                    <td>ICML</td> 
+                    <td>A*</td> 
+                    <td>2017/02/24</td> 
+                    <td><a href="https://2017.icml.cc/">Aug. 6-11, 2017, International Convention Centre, Sydney, Australia</a></td> 
+                    <td>International Conference on Machine Learning</td>
+                </tr> 
+                <tr> 
+                    <td>SDM</td> 
+                    <td>A</td> 
+                    <td>2017/10</td> 
+                    <td><a href="http://www.siam.org/meetings/sdm17/">sdm2018</a></td> 
+                    <td>SIAM International Conference on Data Mining</td>
+                </tr> 
+                <tr> 
+                    <td>SIGGRAPH</td> 
+                    <td>A*</td> 
+                    <td>2017/02/14</td> 
+                    <td><a href="http://s2017.siggraph.org/">Jul. 30- Aug. 3, 2017, Los Angeles, USA</a></td> 
+                    <td>SIG International Conference on Computer Graphics and Interactive Techniques</td>
+                </tr>
+                <tr> 
+                    <td>IJCAI</td> 
+                    <td>A*</td> 
+                    <td>2017/02/19</td> 
+                    <td><a href="http://ijcai-17.org/">Aug. 19-25, 2017, Melbourne, Australia</a></td> 
+                    <td>International Joint Conference on Artificial Intelligence</td>
+                </tr>
+                <tr> 
+                    <td>NIPS</td> 
+                    <td>A*</td> 
+                    <td>2017/05/19</td> 
+                    <td><a href="https://nips.cc/Conferences/2017">Dec. 4-9, 2017, Long Beach Convention Center, Long Beach</a></td> 
+                    <td>Advances in Neural Information Processing Systems</td>
+                </tr> 
+                <tr> 
+                    <td>WWW</td> 
+                    <td>A*</td> 
+                    <td>2017/10/27</td> 
+                    <td><a href="https://www2018.thewebconf.org/">Apr. 23-27, 2018, Lyon, France</a></td> 
+                    <td>International World Wide Web Conference</td>
+                </tr> 
+                <tr> 
+                    <td>AAAI</td> 
+                    <td>A*</td> 
+                    <td>2017/09</td> 
+                    <td><a href="http://www.aaai.org/Conferences/AAAI/aaai18.php">Feb. 4-10, 2018, New Orleans, Lousiana, USA</a></td> 
+                    <td>National Conference of the American Association for Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <td>ICONIP</td>
+                    <td>A</td>
+                    <td>2017/06/10 </td>
+                    <td><a href="http://www.iconip2017.org/papers.html">Nov. 14-18, 2017, Guangzhou, China</a></td>
+                    <td>International Conference on Neural Information Processing</td>
+                </tr>
+                <tr>
+                    <td>ICWS </td>
+                    <td>A</td>
+                    <td>2017/02/06</td>
+                    <td><a href="http://www.icws.org/2017/about.html">Jun. 25-30, 2017, Honolulu, Hawaii, USA</a></td>
+                    <td>IEEE International Conference on Web Services</td>
+                </tr>
+                <tr>
+                    <td>ICSOC </td>
+                    <td>A </td>
+                    <td>2017/06/06</td>
+                    <td><a href="http://www.icsoc.spilab.es/">Nov. 13-16, 2017, Malaga, Spain</a></td>
+                    <td>International Conference on Service Oriented Computing</td>
+                </tr>
+                <tr>
+                    <td>CSCW</td>
+                    <td>A </td>
+                    <td>2017/04/27 </td>
+                    <td><a href="https://cscw.acm.org/2018/index.html">Oct/Nov. 2018</a></td>
+                    <td>ACM Conference on Computer Supported Cooperative Work</td>
+                </tr>
+                <tr>
+                    <td>PAKDD</td>
+                    <td>A </td>
+                    <td>2017/10</td>
+                    <td><a href="">TBD</a></td>
+                    <td>Pacific-Asia Conference on Knowledge Discovery and Data Mining</td>
+                </tr>
+                <tr>
+                    <td>ICIS  </td>
+                    <td>A*</td>
+                    <td>2017/05/05</td>
+                    <td><a href="https://icis2017.aisnet.org/">Dec. 10-13, 2017, Seoul, South Korea</a></td>
+                    <td>International Conference on Information Systems</td>
+                </tr>
+                <tr>
+                    <td>ECAI</td>
+                    <td>A</td>
+                    <td>2018/02</td>
+                    <td><a href="https://www.eurai.org/activities/ECAI_conferences">Jul. 13-19, 2018, Stockholm</a></td>
+                    <td>European Conference on Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <td>IJCNN </td>
+                    <td>A</td>
+                    <td> 2018/01/15</td>
+                    <td><a href="http://www.ecomp.poli.br/~wcci2018/">Jul. 8-13, 2018, Rio de Janeiro, Brazil Acre, Brazil</a></td>
+                    <td>IEEE International Joint Conference on Neural Networks</td>
+                </tr>
+                <tr>
+                    <td>AIM</td>
+                    <td>A</td>
+                    <td>2018/02/11</td>
+                    <td><a href="http://www.ieee-ras.org/component/rseventspro/event/1133-aim-2018-2018-ieee-asme-international-conference-on-advanced-intelligent-mechatronics">Jul. 24-27, 2018, Auckland, New Zealand</a></td>
+                    <td>Artificial Intelligence in Medicine</td>
+                </tr>
+                <tr>
+                    <td>IDA</td>
+                    <td>A</td>
+                    <td>2017/05/19</td>
+                    <td><a href="http://www.dcs.bbk.ac.uk/ida2017/">Oct. 26-28, 2017, London, UK</a></td>
+                    <td>Intelligent Data Analysis</td>
+                </tr>
+                <tr>
+                    <td>AMCIS</td>
+                    <td>A</td>
+                    <td>2018/02</td>
+                    <td><a href="http://amcis2018.aisnet.org/">Aug. 16-18, 2018, New Orleans, LA, USA</a></td>
+                    <td>Americas Conference on Information Systems</td>
+                </tr>
+                <tr>
+                    <td>OCIS</td>
+                    <td>A</td>
+                    <td>2017/05/10</td>
+                    <td><a href="http://www.ocis.org.au/">Jul. 21-26, 2018, Brisbane, Australia </a></td>
+                    <td>AoM Organizational Communication and Information Systems</td>
+                </tr>
+                <tr>
+                    <td>ECIS</td>
+                    <td>A</td>
+                    <td>2017/11/16</td>
+                    <td><a href="http://www.ecis2018.eu/">Jun. 23-28, 2018, Portsmouth, UK</a></td>
+                    <td>European Conference on Information Systems</td>
+                </tr>
+                <tr>
+                    <td>CaiSE</td>
+                    <td>A</td>
+                    <td>2017/11</td>
+                    <td><a href="">Jun. 2018</a></td>
+                    <td>International Conference on Advanced Information Systems Engineering</td>
+                </tr>
+                <tr>
+                    <td>CoopIS</td>
+                    <td>A</td>
+                    <td>TBD</td>
+                    <td><a href="">TBD</a></td>
+                    <td>International Conference on Cooperative Information Systems</td>
+                </tr>
+                <tr>
+                    <td>PACIS</td>
+                    <td>A</td>
+                    <td>2018/03</td>
+                    <td><a href="https://pacis2018.jp/">Jun. 26-30, 2018, Yokohama, Japan </a></td>
+                    <td>Pacific Asia Conference on Information Systems</td>
+                </tr>
+                <tr>
+                    <td>ISD</td>
+                    <td>A</td>
+                    <td>2017/04/15</td>
+                    <td><a href="http://easyconferences.eu/portfolio/isd-2017/">Sept. 6-8, 2017, Pyla, Larnaca, Cyprus</a></td>
+                    <td>International Conference on Information Systems Development</td>
+                </tr>
+                <tr>
+                    <td>ICDE</td>
+                    <td>A*</td>
+                    <td>2017/12/29</td>
+                    <td><a href="https://icde2018.org/">Apr. 16-20, 2018, Paris, France</a></td>
+                    <td>International Conference on Data Engineering</td>
+                </tr>
+                <tr>
+                    <td>UAI</td>
+                    <td>A*</td>
+                    <td>2017/03/01</td>
+                    <td><a href="http://auai.org/uai2017/index.php">Aug. 11-15, 2017, Sydney, Australia</a></td>
+                    <td>Conference in Uncertainty in Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <td>ICDAR</td>
+                    <td>A</td>
+                    <td>2017/04/01</td>
+                    <td><a href="http://u-pat.org/ICDAR2017/index.html">Nov. 9-15, 2017, Kyoto, Japan</a></td>
+                    <td>IEEE International Conference on Document Analysis and Recognition</td>
+                </tr>
+                <tr>
+                    <td>ICPR</td>
+                    <td>B</td>
+                    <td>2018/01/05</td>
+                    <td><a href="http://www.icpr2018.org/">Aug. 20-24, 2018, Bejing, China</a></td>
+                    <td>International Conference on Pattern Recognition</td>
+                </tr>
+                <tr>
+                    <td>AISTATS</td>
+                    <td>A </td>
+                    <td>2017/10</td>
+                    <td><a href="">TBD</a></td>
+                    <td>International Conference on Artificial Intelligence and Statistics</td>
+                </tr>
+                <tr>
+                    <td>ICLR </td>
+                    <td>No rank</td>
+                    <td>TBD</td>
+                    <td><a href="">TBD</a></td>
+                    <td>International Conference on Learning Representations</td>
+                </tr>
+                <tr>
+                    <td>IUI</td>
+                    <td>A</td>
+                    <td>2017/10/08</td>
+                    <td><a href="http://iui.acm.org/2018/">Mar. 7-11, 2018, Tokyo, Japan</a></td>
+                    <td>International Conference on Intelligent User Interfaces</td>
+                </tr>
+            </tbody>
+            </table>  
+
+            <p></p>   
+            <p></p>
+
+            <h4>Related Links</h4>
+
+            <p>For more information, please check</p>
+
+            <ul>
+                <li><a href="http://www.wikicfp.com/cfp/">WIKICFP</a></li>
+                <li><a href="http://portal.core.edu.au/conf-ranks/">Core rank</a></li>
+                <li><a href="http://lipn.univ-paris13.fr/~bennani/CSRank.html/">CSRank</a></li>
+                <li><a href="http://jeffhuang.com/best_paper_awards.html">Best paper award</a></li>
+                <li><a href="http://data-mining.philippe-fournier-viger.com/the-top-journals-and-conferences-in-data-mining-data-science/">Top Conference and Journal</a></li>
+            </ul>
+     
+      
+         
+
+
+            <h3 class="title-bg">Reading Group and Learning Group</h3>
+
+            <p>Reading Group Coordinator: Xiang Zhang</p>
+
+            <p>Learning Group Coordinator: Manqing Dong</p>
+
+            <p>Here are some rules that you need to follow:</p>
+
+            <ol>
+                <li>the reading group meetings will be held on Monday every two weeks;</li>
+                <li>selecting the best papers from the top conferences of your research interests. Please note that the paper MUST come from a CORE A* conference with less than 2 years old.</li>
+            </ol>
+
+            <h6>Time & Place</h6>
+
+            <ul>
+                <li>Time: 3:00pm - 4:00pm Monday per fortnight</li>
+                <li>Venue: K17, 401K</li>
+            </ul>
+
+            <p>Order: Xiang Zhang; Chaoran Huang; Guangyang Qi; Shuai Zhang; Xiaodong Ning; Manqing Dong; Xigang Yuan; Kaixuan Chen; Dalin Zhang</p>
+
+            <p>Slides of former reading and learning group, please visit: <a href="Groupwiki_Slides.htm">Slides</a></p>
+
+        </div> <!--End page content column-->
+
+
+
+    </div><!-- End container row -->
+    
+    </div> <!-- End Container -->
+
+    <!-- Footer Area
+        ================================================== -->
+
+    <div class="footer-container"><!-- Begin Footer -->
+        <div class="container">
+            <div class="row footer-row">
+                <div class="span3 footer-col">
+                    <h5>Visit</h5>
+                    <address>
+                        CSE Building, UNSW Sydney<br />
+                        NSW 2052, Australia<br />
+                    </address>
+                    <!--<ul class="social-icons">
+                        <li><a href="#" class="social-icon facebook"></a></li>
+                        <li><a href="#" class="social-icon twitter"></a></li>
+                        <li><a href="#" class="social-icon dribble"></a></li>
+                        <li><a href="#" class="social-icon rss"></a></li>
+                        <li><a href="#" class="social-icon forrst"></a></li>
+                    </ul> -->
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Call</h5>
+                    <p>+61 2 9385 6556</p>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Contact</h5>
+                    <p>lina.yao@unsw.edu.au</p>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Copyright</h5>
+                    <p>2012 Piccolo Theme. All rights reserved.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div><!-- End Footer --> 
+
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    
+</body>
+</html>
