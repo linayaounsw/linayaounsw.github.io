@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: Learning group update 19-Jun-2017">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Groupwiki_Slides.htm" afterPath="$PROJECT_DIR$/Groupwiki_Slides.htm" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="Groupwiki_Slides.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_Slides.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="82" column="72" lean-forward="false" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
+            <state relative-caret-position="305">
+              <caret line="139" column="80" lean-forward="false" selection-start-line="139" selection-start-column="80" selection-end-line="139" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -119,7 +118,7 @@
       <updated>1491190900497</updated>
       <workItem from="1491190903705" duration="1216000" />
       <workItem from="1497434082078" duration="1491000" />
-      <workItem from="1497835530537" duration="268000" />
+      <workItem from="1497835530537" duration="430000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -135,11 +134,25 @@
       <option name="project" value="LOCAL" />
       <updated>1491191521246</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Chaoran: Learning group update 19-Jun-2017">
+      <created>1497835812438</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497835812438</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Chaoran: Learning group update 19-Jun-2017">
+      <created>1497835933431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1497835933431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2975000" />
+    <option name="totallyTimeSpent" value="3137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
@@ -206,8 +219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_Slides.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="82" column="72" lean-forward="false" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
+        <state relative-caret-position="305">
+          <caret line="139" column="80" lean-forward="false" selection-start-line="139" selection-start-column="80" selection-end-line="139" selection-end-column="80" />
           <folding />
         </state>
       </provider>
