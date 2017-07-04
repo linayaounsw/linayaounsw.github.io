@@ -121,7 +121,25 @@
                             This page should include all basic things about the machine, and more are to be added.
                         </p>
 
-                        <h4>Overview</h4>
+                        <b>Contents</b>
+                        <ol>
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#start">Getting Started</a></li>
+                            <ol>
+                                <li><a href="#access">Accesing the Server</a></li>
+                                <li><a href="#ssh_key_gen">Generating SSH key pair</a></li>
+                                <li><a href="#ssh_login">Login</a></li>
+                            </ol>
+                            <li><a href="#start_comp">Starting computing</a></li>
+                            <ol>
+                                <li><a href="#screen">GNU Screen</a></li>
+                                <li><a href="#gpustat">Checking GPU Status</a></li>
+                                <li><a href="#gpumask">Masking GPUs</a></li>
+                                <li><a href="#tf_mem_growth">TensorFLow: Allowing GPU memory growth</a></li>
+                            </ol>
+                        </ol>
+
+                        <h4 id="overview">Overview</h4>
                         <p>DrStrange is a midrange system/ minicomputer customized and purchased for the purpose of
                             conducting massive computing tasks for our own group, specifically floating point
                             computation intensive deep learning tasks. It currently consists of 2 12-core/ 24-thread
@@ -141,8 +159,8 @@
 
 
 
-                        <h4>Getting Started</h4>
-                        <h5>Accessing the Server</h5>
+                        <h4 id="start">Getting Started</h4>
+                        <h5 id="access">Accessing the Server</h5>
                         <p>DrStrange runs linux, the server can be accessed using
                             <a href="https://www.ssh.com/">SSH</a>, thus SSH client is required. Unix based systems,
                             such as MacOS(Mac OS X), OpenBSD and most Linux distributions, usually already have OpenSSH
@@ -263,7 +281,7 @@ There is a screen on:
                         <pre>screen -r 11123</pre>
                         and screen with pid 11123 will be reattached, and display as full terminal windows size.
                         </p>
-                        <b id="goustat">Check GPU Status</b>
+                        <b id="gpustat">Checking GPU Status</b>
                         <p>It is generally recommended to check GPU status before running a gpu accelarated program, so
                             that we can avoid interrupting jobs owned by someone else. Also you may not want to fork your
                             job on a busy GPU unit. Check GPU status typically can be done by command <b>`nvidia-smi`</b>.
@@ -292,7 +310,33 @@ CUDA_VISIBLE_DEVICES=0,2,3  //Devices 0, 2, 3 will be visible; device 1, 4, 5 is
                         <b>`GPU device 0`</b>, this can be done via:
                         <pre>CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
                         </p>
+                        <b id="tf_mem_growth">TensorFLow: Allowing GPU memory growth</b>
+                        <p>Since Tensorflow is considerably popular in our group and many have not program properly with it
+                            so far, I feel necessary to propose another handy way to use GPU resource more efficiently,
+                            that is to control the usage of memory, to only grow the memory usage as is needed by the process.
+                            This can be done by set parameter <b>`allow_growth`</b> to be <b>`True`</b> when starting the
+                            session.
+                        <pre>
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+session = tf.Session(config=config, ...)
+                        </pre>
+                        Also, a <b>`per_process_gpu_memory_fraction`</b> option setting up limit of memory usage of process
+                        is also quite handy, especially used along with <b>`CUDA_VISIBLE_DEVICES`</b>. An example to only
+                        allocate 40% of the total memory of each GPU can be:
+                        <pre>
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.4
+session = tf.Session(config=config, ...)
+                    </pre>
+
+                        More details is available
+                        <a href="https://www.tensorflow.org/tutorials/using_gpu#allowing_gpu_memory_growth" target="_blank">
+                            here
+                        </a>.
                     </div>
+
+                    </p>
 
                     <div class="post-summary-footer">
                         <ul class="post-data">
