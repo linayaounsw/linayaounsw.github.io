@@ -21,8 +21,8 @@
       <file leaf-file-name="Groupwiki_GPU.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="313" column="108" lean-forward="false" selection-start-line="313" selection-start-column="99" selection-end-line="313" selection-end-column="108" />
+            <state relative-caret-position="525">
+              <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -192,7 +192,7 @@
       <workItem from="1497835530537" duration="767000" />
       <workItem from="1497837419741" duration="479000" />
       <workItem from="1499069347615" duration="14847000" />
-      <workItem from="1499157541275" duration="35000" />
+      <workItem from="1499157541275" duration="994000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -292,11 +292,25 @@
       <option name="project" value="LOCAL" />
       <updated>1499157266733</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Chaoran: Correction of typos">
+      <created>1499157597076</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1499157597076</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Chaoran: Correction of typos">
+      <created>1499157840766</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1499157840766</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21868000" />
+    <option name="totallyTimeSpent" value="22827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1080" height="1897" extended-state="6" />
@@ -356,6 +370,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="Reading grouo update 03-Apr-2017" />
     <MESSAGE value="Chaoran: Learning group update 19-Jun-2017" />
     <MESSAGE value="Chaoran: corrected dates..." />
@@ -598,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="313" column="108" lean-forward="false" selection-start-line="313" selection-start-column="99" selection-end-line="313" selection-end-column="108" />
+        <state relative-caret-position="525">
+          <caret line="141" column="33" lean-forward="false" selection-start-line="141" selection-start-column="33" selection-end-line="141" selection-end-column="33" />
           <folding />
         </state>
       </provider>
