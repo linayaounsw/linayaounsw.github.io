@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Groupwiki_GPU.htm" afterPath="$PROJECT_DIR$/Groupwiki_GPU.htm" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,8 +45,8 @@
       <file leaf-file-name="Groupwiki_GPU.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="310" column="30" lean-forward="true" selection-start-line="310" selection-start-column="30" selection-end-line="310" selection-end-column="30" />
+            <state relative-caret-position="363">
+              <caret line="310" column="31" lean-forward="false" selection-start-line="310" selection-start-column="31" selection-end-line="310" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -68,7 +69,6 @@
         <option value="Chaoran Huang" />
       </list>
     </option>
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -300,25 +300,11 @@
       <option name="project" value="LOCAL" />
       <updated>1499156624139</updated>
     </task>
-    <task id="LOCAL-00014" summary="Chaoran: Correction of typos&#10;&#10;Signed-off-by: Chaoran Huang &lt;chaoran.huang@unsw.edu.au&gt;">
-      <created>1499156745161</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1499156745161</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Chaoran: Correction of typos&#10;&#10;Signed-off-by: Chaoran Huang &lt;chaoran.huang@unsw.edu.au&gt;">
-      <created>1499156834413</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1499156834413</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21726000" />
+    <option name="totallyTimeSpent" value="21436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1080" height="1897" extended-state="6" />
@@ -398,8 +384,7 @@
     <MESSAGE value="Chaoran: added table of contents, added tf_mem related; done for now" />
     <MESSAGE value="Chaoran: Change of title" />
     <MESSAGE value="Chaoran: Correction of typos" />
-    <MESSAGE value="Chaoran: Correction of typos&#10;&#10;Signed-off-by: Chaoran Huang &lt;chaoran.huang@unsw.edu.au&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: Correction of typos&#10;&#10;Signed-off-by: Chaoran Huang &lt;chaoran.huang@unsw.edu.au&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: Correction of typos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -599,8 +584,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="310" column="30" lean-forward="true" selection-start-line="310" selection-start-column="30" selection-end-line="310" selection-end-column="30" />
+        <state relative-caret-position="363">
+          <caret line="310" column="31" lean-forward="false" selection-start-line="310" selection-start-column="31" selection-end-line="310" selection-end-column="31" />
           <folding />
         </state>
       </provider>
