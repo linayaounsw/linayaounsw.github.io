@@ -127,15 +127,15 @@
                             <li><a href="#start">Getting Started</a></li>
                             <ol>
                                 <li><a href="#access">Accesing the Server</a></li>
-                                <li><a href="#ssh_key_gen">Generating SSH key pair</a></li>
+                                <li><a href="#ssh_key_gen">Generating SSH Key Pair</a></li>
                                 <li><a href="#ssh_login">Login</a></li>
                             </ol>
-                            <li><a href="#start_comp">Starting computing</a></li>
+                            <li><a href="#start_comp">Starting Computing</a></li>
                             <ol>
                                 <li><a href="#screen">GNU Screen</a></li>
                                 <li><a href="#gpustat">Checking GPU Status</a></li>
                                 <li><a href="#gpumask">Masking GPUs</a></li>
-                                <li><a href="#tf_mem_growth">TensorFLow: Allowing GPU memory growth</a></li>
+                                <li><a href="#tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</a></li>
                             </ol>
                         </ol>
 
@@ -176,7 +176,7 @@
                             <a href="#ssh_key_gen"><b>Generate a key for SSH</b></a>
                         </p>
 
-                        <b id="ssh_key_gen">Generating SSH key pair</b>
+                        <b id="ssh_key_gen">Generating SSH Key Pair</b>
                         <p>If you don't have a key pair for SSH yet, please following the instructions to generate the
                             key pair. Otherwise, you can jump to <a href="#ssh_login"><b>Login</a></b> section.
                         </p>
@@ -252,7 +252,7 @@ Last login: Tue Jul  4 15:56:25 2017 from WHO.KNOW.THIS.COMPUTER
 
 
 
-                        <h5 id="start_comp">Starting computing</h5>
+                        <h5 id="start_comp">Starting Computing</h5>
                         <p>As the server is accessed via network, and connection outside CSE building can be unstable,
                         let me first introduce you <a href="https://www.gnu.org/software/screen/">GNU Screen</a>.
                         </p>
@@ -275,10 +275,10 @@ Last login: Tue Jul  4 15:56:25 2017 from WHO.KNOW.THIS.COMPUTER
 $screen -ls
 There is a screen on:
 	11123.pts-1.drstrange	(Detached)
-1 Socket in /var/run/screen/S-chaoranh.
+1 Socket in /var/run/screen/S-USERNAME.
                         </pre>
                         In this example 11123 is the pid(Process ID) of the detached Screen, which can be reattached by
-                        <pre>screen -r 11123</pre>
+                        <pre>$ screen -r 11123</pre>
                         and screen with pid 11123 will be reattached, and display as full terminal windows size.
                         </p>
                         <b id="gpustat">Checking GPU Status</b>
@@ -310,7 +310,7 @@ CUDA_VISIBLE_DEVICES=0,2,3  //Devices 0, 2, 3 will be visible; device 1, 4, 5 is
                         <b>`GPU device 0`</b>, this can be done via:
                         <pre>$ CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
                         </p>
-                        <b id="tf_mem_growth">TensorFLow: Allowing GPU memory growth</b>
+                        <b id="tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</b>
                         <p>Since Tensorflow is considerably popular in our group and many have not program properly with it
                             so far, I feel necessary to propose another handy way to use GPU resource more efficiently,
                             that is to control the usage of memory, to only grow the memory usage as is needed by the process.
