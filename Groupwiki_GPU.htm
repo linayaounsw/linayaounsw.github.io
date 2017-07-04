@@ -308,7 +308,7 @@ CUDA_VISIBLE_DEVICES=0,2,3  //Devices 0, 2, 3 will be visible; device 1, 4, 5 is
                              </pre>
                         For example, you have a python script call <b>`eg.py`</b>, which you want spawn it only on
                         <b>`GPU device 0`</b>, this can be done via:
-                        <pre>CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
+                        <pre>$ CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
                         </p>
                         <b id="tf_mem_growth">TensorFLow: Allowing GPU memory growth</b>
                         <p>Since Tensorflow is considerably popular in our group and many have not program properly with it
@@ -330,7 +330,7 @@ config.gpu_options.per_process_gpu_memory_fraction = 0.4
 session = tf.Session(config=config, ...)
                     </pre>
 
-                        More details is available
+                        More details are available
                         <a href="https://www.tensorflow.org/tutorials/using_gpu#allowing_gpu_memory_growth" target="_blank">
                             here
                         </a>.
@@ -353,7 +353,7 @@ session = tf.Session(config=config, ...)
                 <div class="post-body about-author">
                     <img src="img/Group websites/chaoran.jpg" alt="author" style="height: 80px;">
                     <h4>About Chaoran Huang</h4>
-                    Chaoran Huang is a PhD candidate in our group, and he manages the GPU server. More details is
+                    Chaoran Huang is a PhD candidate in our group, and he manages the GPU server. More details are
                     available at <a href="http://www.cse.unsw.edu.au/~chaoranh/">his personal webpage</a>.
                 </div>
             </section>
