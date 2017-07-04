@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: Change of title">
+    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: Correction of typos">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Groupwiki.htm" afterPath="$PROJECT_DIR$/Groupwiki.htm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Groupwiki_GPU.htm" afterPath="$PROJECT_DIR$/Groupwiki_GPU.htm" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,8 +45,8 @@
       <file leaf-file-name="Groupwiki_GPU.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="114" column="106" lean-forward="false" selection-start-line="114" selection-start-column="106" selection-end-line="114" selection-end-column="106" />
+            <state relative-caret-position="348">
+              <caret line="330" column="26" lean-forward="true" selection-start-line="330" selection-start-column="26" selection-end-line="330" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -60,6 +59,7 @@
       <find>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</find>
       <find>$</find>
       <find>check b</find>
+      <find>details</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -286,11 +286,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499156040685</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Chaoran: Change of title">
+      <created>1499156355996</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1499156355996</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21059000" />
+    <option name="totallyTimeSpent" value="21327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="23" width="1080" height="1897" extended-state="6" />
@@ -358,7 +365,9 @@
     <MESSAGE value="Chaoran: empty wiki page creation of GPU server" />
     <MESSAGE value="Chaoran: overview done..." />
     <MESSAGE value="Chaoran: added table of contents, added tf_mem related; done for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: added table of contents, added tf_mem related; done for now" />
+    <MESSAGE value="Chaoran: Change of title" />
+    <MESSAGE value="Chaoran: Correction of typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: Correction of typos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -557,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="114" column="106" lean-forward="false" selection-start-line="114" selection-start-column="106" selection-end-line="114" selection-end-column="106" />
+        <state relative-caret-position="348">
+          <caret line="330" column="26" lean-forward="true" selection-start-line="330" selection-start-column="26" selection-end-line="330" selection-end-column="26" />
           <folding />
         </state>
       </provider>
