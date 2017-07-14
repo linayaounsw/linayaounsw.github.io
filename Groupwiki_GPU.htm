@@ -138,6 +138,7 @@
                                     <li><a href="#gpustat">Checking GPU Status</a></li>
                                     <li><a href="#gpumask">Masking GPUs</a></li>
                                     <li><a href="#tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</a></li>
+                                    <li><a href="#userPip">Installing Python Packages in User's Home Directory with pip</a></li>
                                 </ol>
                             </ol>
                         </ol>
@@ -313,6 +314,7 @@ CUDA_VISIBLE_DEVICES=0,2,3  //Devices 0, 2, 3 will be visible; device 1, 4, 5 is
                         <b>`GPU device 0`</b>, this can be done via:
                         <pre>$ CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
                         </p>
+
                         <b id="tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</b>
                         <p>Since Tensorflow is considerably popular in our group and many have not programed properly with it
                             so far, I feel necessary to propose another handy way to use GPU resource more efficiently,
@@ -331,12 +333,25 @@ session = tf.Session(config=config, ...)
 config = tf.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.4
 session = tf.Session(config=config, ...)
-                    </pre>
+                        </pre>
 
                         More details are available
                         <a href="https://www.tensorflow.org/tutorials/using_gpu#allowing_gpu_memory_growth" target="_blank">
                             here
                         </a>.
+                        </p>
+
+                        <b id="userPip">Installing Python Packages in User's Home Directory with pip</b>
+                        <p>As users on DrStrange normally have no privilege permission( or known as "root"), global installation
+                            of Python packages is not practical. Yet enquiry or suggestion on installing common useful packages
+                            are encouraged to send to administrators or me Chaoran myself, it is also very handy at many times,
+                            to install packages under users' home themselves, which requires no privilege permission, and affect
+                            nothing on others. <br>
+                            This can be done easily by adding a <b>`--user`</b> option to a normal pip command. For example:
+                            <pre>$ pip install --user [PACKAGE_NAME]</pre>
+                            where <b>`[PACKAGE_NAME]`</b> is the one you want to install.
+                        </p>
+
                     </div>
 
                     </p>
