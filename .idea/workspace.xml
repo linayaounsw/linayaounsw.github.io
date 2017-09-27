@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Groupwiki_GPU.htm" afterPath="$PROJECT_DIR$/Groupwiki_GPU.htm" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,14 +15,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="Groupwiki_GPU.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="331" column="24" lean-forward="false" selection-start-line="331" selection-start-column="24" selection-end-line="331" selection-end-column="24" />
+            <state relative-caret-position="490">
+              <caret line="341" column="114" lean-forward="false" selection-start-line="341" selection-start-column="114" selection-end-line="341" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -36,6 +36,7 @@
       <find>check b</find>
       <find>details</find>
       <find>program</find>
+      <find>tensor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,7 +68,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1280" />
     <option name="height" value="1024" />
   </component>
@@ -90,7 +91,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="FullScreen" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,6 +106,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -140,15 +149,6 @@
       <option name="cucumberJsArguments" value="" />
       <option name="executablePath" />
       <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -192,6 +192,8 @@
       <workItem from="1499069347615" duration="14847000" />
       <workItem from="1499157541275" duration="1607000" />
       <workItem from="1500007782305" duration="3625000" />
+      <workItem from="1506414598069" duration="384000" />
+      <workItem from="1506509858489" duration="215000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -323,7 +325,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27065000" />
+    <option name="totallyTimeSpent" value="27664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
@@ -349,7 +351,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -408,13 +410,7 @@
     <entry file="file://$PROJECT_DIR$/publication.html" />
     <entry file="file://$PROJECT_DIR$/blog/index.html" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-03-09-Reading-and-Learning-Group-Slides.md" />
-    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -461,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="58" column="21" lean-forward="true" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,13 +483,7 @@
     <entry file="file://$PROJECT_DIR$/publication.html" />
     <entry file="file://$PROJECT_DIR$/blog/index.html" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-03-09-Reading-and-Learning-Group-Slides.md" />
-    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -527,7 +516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -568,13 +556,7 @@
     <entry file="file://$PROJECT_DIR$/publication.html" />
     <entry file="file://$PROJECT_DIR$/blog/index.html" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-03-09-Reading-and-Learning-Group-Slides.md" />
-    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/OneDrive/OneDrive - UNSW/Dropbox/Research at UNSW/LearningGroup/19Jun2017/index.html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -614,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,14 +610,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="2606" column="1" lean-forward="false" selection-start-line="2606" selection-start-column="1" selection-end-line="2606" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="331" column="24" lean-forward="false" selection-start-line="331" selection-start-column="24" selection-end-line="331" selection-end-column="24" />
+        <state relative-caret-position="490">
+          <caret line="341" column="114" lean-forward="false" selection-start-line="341" selection-start-column="114" selection-end-line="341" selection-end-column="114" />
           <folding />
         </state>
       </provider>
