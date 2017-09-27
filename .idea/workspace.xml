@@ -20,8 +20,8 @@
       <file leaf-file-name="Groupwiki_GPU.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="341" column="114" lean-forward="false" selection-start-line="341" selection-start-column="114" selection-end-line="341" selection-end-column="114" />
+            <state relative-caret-position="300">
+              <caret line="351" column="38" lean-forward="false" selection-start-line="351" selection-start-column="35" selection-end-line="351" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -37,6 +37,7 @@
       <find>details</find>
       <find>program</find>
       <find>tensor</find>
+      <find>pip</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,7 +194,7 @@
       <workItem from="1499157541275" duration="1607000" />
       <workItem from="1500007782305" duration="3625000" />
       <workItem from="1506414598069" duration="384000" />
-      <workItem from="1506509858489" duration="215000" />
+      <workItem from="1506509858489" duration="431000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -321,11 +322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500018944689</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Chaoran: add pete warden's blog in terms of tensorflow">
+      <created>1506510104537</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1506510104537</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27664000" />
+    <option name="totallyTimeSpent" value="27880000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1024" extended-state="0" />
@@ -398,7 +406,8 @@
     <MESSAGE value="Chaoran: Correction of typos" />
     <MESSAGE value="Chaoran: Correction of contents table" />
     <MESSAGE value="Chaoran: add pip --user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: add pip --user" />
+    <MESSAGE value="Chaoran: add pete warden's blog in terms of tensorflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: add pete warden's blog in terms of tensorflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -615,8 +624,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Groupwiki_GPU.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="341" column="114" lean-forward="false" selection-start-line="341" selection-start-column="114" selection-end-line="341" selection-end-column="114" />
+        <state relative-caret-position="300">
+          <caret line="351" column="38" lean-forward="false" selection-start-line="351" selection-start-column="35" selection-end-line="351" selection-end-column="38" />
           <folding />
         </state>
       </provider>
