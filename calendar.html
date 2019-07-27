@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="insData, School of Computer Science and Engineering, UNSW Sydney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>insData Group</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/d3.min.js"></script>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div id="navbar"></div>
+        <div class="content">
+            <div class="content-grid mdl-grid">
+                <!--Begin page content column-->
+                <div class="mdl-typography-body-1 mdl-cell mdl-cell--12-col">
+                    <h3 class="title-bg">Key Dates</h3>
+                    <p class="lead">Here lists the key dates for the top conference. </p>
+
+                    <table id="conf" class="mdl-data-table mdl-js-data-table sortable"
+                           border="1" cellpadding="1" cellspacing="1" style="font-size: smaller">
+                    </table>
+                    <script type="text/javascript" charset="utf-8">
+                        d3.text("data/calendar.csv", function (data) {
+                            var parsedCSV = d3.csv.parseRows(data);
+                            d3.select("table").append("thead")
+
+                                .selectAll("tr")
+                                .data(parsedCSV).enter()
+                                .append("tr")
+
+                                .selectAll("td")
+                                .data(function (d) {
+                                    return d;
+                                }).enter()
+                                .append("td")
+                                .text(function (d) {
+                                    return d;
+                                });
+                        });
+                    </script>
+                    <p></p>
+                    <p></p>
+
+                    <h4>Related Links</h4>
+
+                    <p>For more information, please check</p>
+
+                    <ul>
+                        <li><a href="http://www.wikicfp.com/cfp/">WIKICFP</a></li>
+                        <li><a href="http://portal.core.edu.au/conf-ranks/">Core rank</a></li>
+                        <li><a href="http://lipn.univ-paris13.fr/~bennani/CSRank.html/">CSRank</a></li>
+                        <li><a href="http://jeffhuang.com/best_paper_awards.html">Best paper award</a></li>
+                        <li>
+                            <a href="http://data-mining.philippe-fournier-viger.com/the-top-journals-and-conferences-in-data-mining-data-science/">Top
+                                Conference and Journal</a></li>
+                    </ul>
+
+
+                    <h3 class="title-bg">Reading Group and Learning Group</h3>
+
+                    <p>Reading Group Coordinator: Xiang Zhang</p>
+
+                    <p>Learning Group Coordinator: Manqing Dong</p>
+
+                    <p>Here are some rules that you need to follow:</p>
+
+                    <ol>
+                        <li>the reading group meetings will be held on Monday every two weeks;</li>
+                        <li>selecting the best papers from the top conferences of your research interests. Please note
+                            that
+                            the
+                            paper MUST come from a CORE A* conference with less than 2 years old.
+                        </li>
+                    </ol>
+
+                    <h6>Time & Place</h6>
+
+                    <ul>
+                        <li>Time: 3:00pm - 4:00pm Monday per fortnight</li>
+                        <li>Venue: K17, 401K</li>
+                    </ul>
+
+                    <p>Order: Xiang Zhang; Chaoran Huang; Shuai Zhang; Xiaodong Ning; Manqing Dong; Kaixuan Chen; Dalin
+                        Zhang; Yang
+                        Xiao; Lei Bai</p>
+
+                    <p>Slides of former reading and learning group, please visit: <a
+                            href="wiki/slides.html">Slides</a>
+                    </p>
+
+                </div> <!--End page content column-->
+            </div>
+        </div><!-- End container row -->
+        <div id="footer"></div>
+    </div>
+</div>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
+</script>
+</body>
+</html>

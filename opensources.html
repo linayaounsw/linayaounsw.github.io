@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="insData, School of Computer Science and Engineering, UNSW Sydney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>insData Group</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div id="navbar"></div>
+        <div class="demo-ribbon"
+             style="background-image: url('images/others/OpenSource-Code-Pexels.jpeg');background-size: cover;"></div>
+        <div class="content">
+            <div class="demo-container mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <div class="mdl-shadow--2dp mdl-cell mdl-cell--8-col post">
+                    <div class="blog">
+                        <div class="section demo">
+                            <h2><a name="demo">Research Demo and Open Source</a></h2>
+                            <h3>Brain-Computer-Interface-Systems</h3>
+                            <p>This series of demos demonstrate our recent progress in regards to <b>Brain Computer
+                                Interface
+                                (BCI) system</b>. <br>
+                                <br>An electroencephalography (EEG) based Brain Computer Interface (BCI) enables people
+                                to
+                                communicate with the outside world by interpreting the EEG signals of their brains to
+                                interact
+                                with intelligent devices such as wheelchairs and robots. More specifically, motor
+                                imagery EEG
+                                (MI-EEG), which
+                                reflects a subject’s active movement intent, has been attracting increasing attention in
+                                developing an EEG-based BCI system.
+                            </p>
+
+
+                            <ul>
+                                <li data-sidenav-content-container="">
+                                    <h3><a id="Brain-Computer-Interface-Systems" data-sidenav="">Mind control smart
+                                        living</a>
+                                    </h3>
+                                    <p>A simulated robot is navigated by our system, which learns user’s intent from EEG
+                                        recordings, to take a can of beverage from a table in the kitchen and put it in
+                                        a table
+                                        in living room.<br><br> Reusable source code and dataset are provided in my
+                                        github (<a
+                                                href="https://github.com/xiangzhang1015">EEG-based-Control
+                                            repository</a>).</p>
+
+                                    <p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VZYX1095Vkc"
+                                                frameborder="0" allowfullscreen=""></iframe>
+                                    </p>
+                                    <p><b>Related Papers</b></p>
+                                    <ul>
+                                        <li><p>Weitong Chen, Sen Wang, Guodong Long, Lina Yao, Quan Zheng Sheng, and Xue Li,
+                                            <span class="pub-title"><strong>Dynamic Illness Severity Prediction via Multi-task RNNs for Intensive Care Unit</strong></span>. IEEE International Conference on Data Mining
+                                            (<a href="http://www.cikm2018.units.it/"><abbr title="ICDM 2018"> ICDM 2018)</abbr></a>. Singapore, November 17-20, 2018.
+                                        </p></li>
+
+                                        <li><p>Dalin Zhang, Lina Yao, Kaixuan Chen, Sen Wang,
+                                            <span class="pub-title"><strong>Ready for Use: Subject-Independent Movement Intention Recognition via A Convolutional Attention Model</strong></span>. The 27th ACM Conference on Information and Knowledge Management
+                                            (<a href="http://www.cikm2018.units.it/"><abbr title="CIKM 2018"> CIKM 2018)</abbr></a>. Lingotto, Turin, Italy, October 22 - 26, 2018
+                                        </p></li>
+
+                                        <li><p>Xiang Zhang,Lina Yao, Salil.S. Kanhere, Yunhao Liu, Tao Gu and Kaixuan Chen.
+                                            <span class="pub-title"><strong>MindID: Person Identification from Brain Waves through Attention-based Recurrent Neural Network.</strong></span>
+                                            <a href="https://arxiv.org/pdf/1711.06149.pdf">arXiv</a>(accepted by IMWUT/Ubicomp 2018)
+                                        </p></li>
+
+                                        <li><p>Dalin Zhang,Lina Yao, Sen Wang, Kaixuan Chen, Zheng Yang and Boualem Benatallah.
+                                            <span class="pub-title"><strong>Fuzzy Integral Optimization with Deep Q-Network for EEG-based Intention Recognition.</strong></span> The 22nd Pacific-Asia Conference on Knowledge Discovery and Data Mining
+                                            (<a href="http://pakdd.org/welcome-to-pakdd2018/">PAKDD 2018</a>), Melbourne, Australia, June 3 - 6, 2018.
+                                        </p></li>
+
+                                        <li><p>Dalin Zhang,Lina Yao, Xiang Zhang, Sen Wang, Weitong Chen and Robert Boots,
+                                            <span class="pub-title"><strong>EEG-based Intention Recognition from Spatio-Temporal Representations via Cascade and Parallel Convolutional Recurrent Neural Networks.</strong> </span>
+                                            <a href="hhttps://arxiv.org/abs/1708.06578">arXiv</a>(accepted by <a href="https://aaai.org/Conferences/AAAI-18/">AAAI-18</a>)
+                                        </p></li>
+
+                                        <li><p>Xiang Zhang,Lina Yao, Dalin Zhang, Xianzhi Wang, Quan Z. Sheng and Tao Gu.
+                                            <span class="pub-title"><strong>Multi-Person Brain Activity Recognition via Comprehensive EEG Signal Analysis.</strong></span> The 14th International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services
+                                            (<a href="http://mobiquitous.org/">Mobiquitous 2017</a>). Melbourne, Australia Nov 7 - 10, 2017.
+                                        </p></li>
+
+                                        <li><p>Xiang Zhang,Lina Yao, Chaoran Huang, QuanZheng Sheng and Xianzhi Wang,
+                                            <span class="pub-title"><strong>Intent Recognition in Smart Living Through Deep Recurrent Neural Networks.</strong></span> The 24th International Conference On Neural Information Processing
+                                            (<a href="http://www.apnns.org/ICONIP2017/">ICONIP 2017</a>).
+                                            Guangzhou, China, November 14-18, 2017.
+                                        </p></li>
+
+                                    </ul>
+                                </li>
+
+                                <li data-sidenav-content-container="">
+                                    <h3><a id="Brain-Typing" data-sidenav="">Brain Typing System</a></h3>
+                                    <p>An online brain typing system is developed to convert user’s thoughts to texts,
+                                        which
+                                        based on the high EEG (brainwave) signals classification accuracy. Motor
+                                        disabled people
+                                        would benefit greatly from such a system to express their thoughts and
+                                        communicate with
+                                        the outer world.<br>
+                                        <br><a href="https://drive.google.com/drive/folders/0B9MuJb6Xx2PIM0otakxuVHpkWkk">The
+                                            EEG dataset can be accessed from this link.</a></p>
+
+                                    <p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dc0StUPq61k"
+                                                frameborder="0" allowfullscreen=""></iframe>
+                                    </p>
+                                    <p><b>Related Papers</b></p>
+                                    <ul>
+                                        <li data-pub-year="2018"><p><b>Xiang Zhang</b>, <span
+                                                class="pub-me">Lina Yao</span>,
+                                            Quan Z. Sheng, Salil S. Kanhere, Tao Gu and Dalin Zhang, <span
+                                                    class="pub-title"> <a
+                                                    href="https://arxiv.org/abs/1709.08820">Converting Your Thougts to Texts: Enabling Brain Typing via Deep Feature Learning of EEG Signals</a></span>.
+                                            IEEE International Conference on Pervasive Computing and Communications (<a
+                                                    href="http://www.percom.org/">PerCom 2018</a>). Athens, Greece,
+                                            March 19-23,
+                                            2018. (Accepted, CORE Rank A*)</p></li>
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                            <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                            <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                            <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                        <h3>Human Activity Recognition</h3>
+                            <p>These demos showcase a series of novel approachs on device-free/wearable sensors, real-time activity recognition It can be potentially used in a wide range of applications such as Fall Detection, Ambulatory Monitoring, assistive living and abnormal activities detection etc.
+                                (<a href="//download.linayao.com/demos/PostureRec.avi">download</a>)
+                            </p>
+                            <p><b>Related Papers</b></p>
+                            <ul>
+                                <li><p>Xiang Zhang,Lina Yao, Chaoran Huang, Sen Wang, Mingkui Tan, Guodong Long, Can Wang, <span class="pub-title"><strong>Multi-modality Sensor Data Classification with Selective Attention.</strong></span> The 27th International Joint Conference on Artificial Intelligence (<a href="http://www.ijcai-18.org/">IJCAI 2018</a>), July 13-19 2018, Stockholm, Sweden.</p></li>
+                                <li><p>Kaixuan Chen,Lina Yao, Xianzhi Wang, Dalin Zhang，Tao Gu, Zhiwen Yu and Zheng Yang. <span class="pub-title"><strong>Interpretable Recurrent Convolutional Neural Networks with Parallel Attentions for Multi-Modality Activity Modeling.</strong></span> International Joint Conference on Neural Networks (<a href="http://www.ecomp.poli.br/~wcci2018/">IJCNN 2018</a>), Rio de Janeiro, Brazil, July 8 - 13, 2018.</p></li>
+                                <li><p>Kaixuan Chen,Lina Yao, Tao Gu, Zhiwen Yu, Xianzhi Wang and Dalin Zhang. Fullie and Wiselie: <span class="pub-title"><strong>A Dual-Stream Recurrent Convolutional Attention Model for Activity Recognition</strong></span> <a href="https://www.researchgate.net/publication/321098804_Fullie_and_Wiselie_A_Dual-Stream_Recurrent_Convolutional_Attention_Model_for_Activity_Recognition">arXiv</a></p></li>
+                                <li><p>Lina Yao, Quan Z. Sheng, Xue Li, Tao Gu, Mingkui Tan, Xianzhi Wang, Sen Wang and Wenjie Ruan. <span class="pub-title"><strong>Compressive Representation for Device-Free Activity Recognition with Passive RFID Signal Strength.</strong></span> IEEE Transactions on Mobile Computing (TMC) , 2017</p></li>
+                                <li><p>Lina Yao, Feiping Nie, Quan Z. Sheng, Tao Gu, Xue Li, Sen Wang, <span class="pub-title"><strong>Learning from Less for Better: Semi-Supervised Activity Recognition via Shared Structure Discovery.</strong></span> The 2016 ACM International Joint Conference on Pervasive and Ubiquitous Computing ( <a href="http://ubicomp.org/ubicomp2016/index.php">UbiComp 2016</a>). Heidelberg, Germany, September 12-16, 2016. </p></li>
+                                <li><p>Lina Yao, Quan Z. Sheng, Xue Li, Tao Gu, Sen Wang, Wenjie Ruan and Wan Zou.<span class="pub-title"><strong>Freedom: Online Activity Recognition via Dictionary-based Sparse Representation of RFID Sensing Data.</strong></span> The IEEE International Conference on Data Mining (<a href="https://icdm2015.stonybrook.edu/">ICDM 2015</a>), Atlantic City, NJ, USA, November 14 - 17, 2015.</p></li>
+                                <li><p>Lina Yao, Quan Z. Sheng, Wenjie Ruan, Tao Gu, Xue Li, Nickolas J.G. Falkner, and Zhi Yang.<span class="pub-title"><strong>RF-Care: Device-Free Posture Recognition for Elderly People Using Passive RFID Tag Array.</strong></span> The 12th International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services (<a href="http://archive.mobiquitous.org/2015/show/home">MobiQuitous 2015</a>). Coimbra, Portugal, July 22–24, 2015.</p></li>
+                            </ul>
+                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/yuf9lPlh4ig" frameborder="0" allowfullscreen></iframe></p>
+
+                            <h3>Internet of Things and Smart Homes</h3>
+                            <p>The series of demos showcase a series of SmartHome practices under Intelligent systems and Intelligent sensing (Internet of Things), more demos will be added from time to time. You can also visit the running example from <a href="/smarthome/kitchen">http://www.linayao.com/smarthome/kitchen</a>(<a href="//download.linayao.com/demos/SmartHome-Kitchen.mp4">download</a>)</p>
+                            <p><b>Related Papers</b></p>
+                            <ul>
+                                <li><p>Lina Yao, Quan Z. Sheng, Boualem Benatallah, Schahram Dustdar, Xianzhi Wang, Ali Shemshadi and Salil Kanhere. <strong>Up in the Air: When Smart Homes Meet the Internet of ThingsWITS: An IoT-endowed Computational Framework for Activity Recognition in Personalized Smart Homes.</strong> Computing, Springer, 2017 (to appear). </p></li>
+                                <li><p>Lina Yao, Quan Z. Sheng and Schahram Dustdar. <strong>Web-based Management of the Internet of Things.</strong> IEEE Internet Computing (IEEE Internet Computing),Vol 19, No 4, pp 60-67, July/August, 2015.</p></li>
+                                <li><p>Lina Yao, Quan Z. Sheng, Anne. H. H. Ngu and Byron Gao. <strong>Keeping You in the Loop: Enabling Web-based Things Management in the Internet of Things.</strong> The 23rd ACM International Conference on Information and Knowledge Management (CIKM 2014) , November 3-7, 2014, Shanghai, China</p></li>
+                                </li>
+                            </ul>
+                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/q5dZDZ3PZ9Y" frameborder="0" allowfullscreen></iframe></p>
+                            <p><iframe width="560" height="315" src="//www.youtube.com/embed/K5NmiAB5_Ls" frameborder="0" allowfullscreen></iframe></p>
+
+
+                           <h3>Indoor Localization and Tracking</h3>
+                                <p>We showcase a novel localization and tracking system based on the Received Signal Strength (RSS) field formed by cost-efficient Radio-Frequency Identification passive tags.(<a href="//download.linayao.com/demos/TagTrackMobiQuitous2014.mp4">download</a>)</p>
+                                <p><b>Related Papers</b></p>
+                            <ul>
+                                <li><p>Wenjie Ruan, Quan Z. Sheng,Lina Yao, Tao Gu, and Longfei Shangguan, <strong>Device-Free Indoor Localization and Tracking through Human-Object Interactions.</strong>The 17th International Symposium on a World of Wireless, Mobile and Multimedia Networks ( <a href="http://wowmom2016.uc.pt/">WoWMoM 2016</a>), Coimbra, Portugal, June 21-24, 2016.</p></li>
+                                <li><p>Lina Yao, Wenjie Ruan, Quan Z. Sheng, Xue Li and Nickolas J.G. Falkner. <strong>Exploring Tag-free RFID-based Passive Localization and Tracking via Learning-based Probabilistic Approaches. The 23rd ACM International Conference on Information and Knowledge Management</strong> (CIKM 2014) , November 3-7, 2014, Shanghai, China</p></li>
+                                <li><p>Wenjie Ruan,Lina Yao, Quan Z. Sheng, Xue Li and Nickolas J.G. Falkner. <strong>TagTrack: Device-free Localization and Tracking Using Passive RFID Tags. The 11th International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services</strong>(<a href="http://archive.mobiquitous.org/2014/show/home">MobiQuitous 2014</a>) , December 2–5, 2014 London, Great Britain</p></li>
+                            </ul>
+                            <iframe width="420" height="315" src="//www.youtube.com/embed/G0qPhDyPEZ4" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+                            <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                            <p class="mdl-typography-body-1 mdl-cell mdl-cell--2-col"><br/></p>
+                                <h2><a id="Students-Project-Demos" data-sidenav>Students' Project Demos</a></h2>
+                                <p>Some project demos from students who take research project in our group</p>
+                                <ul>
+                                    <li>
+                                        <h3>"Trust-based Social Recommendation", Master Research Project by Zhen Zhu, 2015.</h3>
+                                        <p>Traditional social recommendation systems have a major weakness: these recommendation systems can be easily affected or cheated from malicious users who create ad hoc user profiles and provide fake ratings and reviews. In such a situation, the recommendation systems cannot be reliable. For example, astroturfers are hired by some movie companies to distort certain movie’s ratings on IMDB. This project aims at exploring novel ways on how to prevent this situation and provide more trustworthy recommendations by systematically exploiting the multi-layer trust relationships in social media.</p>
+                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Kw4QWT-lLPk" frameborder="0" allowfullscreen></iframe></p>
+                                        <p><a href="//download.linayao.com/demos/recommendation system on movies.mp4">download</a></p>
+                                    </li>
+                                    <li>
+                                        <h3>"Building Harry Potter's Marauders Map via Internet of Things", Bachelor CS (Advanced) Research Project by Jack Gerrits, 2015</h3>
+                                        <p><em>“The Marauder's Map is a magical document that reveals all of Hogwarts School of Witchcraft and Wizardry. Not only does it show every classroom, every hallway, and every corner of the castle, but it also shows every inch of the grounds, as well as all the secret passages that are hidden within its walls and the location of every person in the grounds, portrayed by a dot….—— Harry Potter’s Wiki”</em></p>
+                                        <p>This project aims at developing a Web-based application built upon Internet of Things, through which we will not only know where everyone is but we will also know what they are doing.</p>
+                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/v49lkMFm10s" frameborder="0" allowfullscreen></iframe></p>
+                                        <p><a href="//download.linayao.com/demos/Smart Home Demo.mp4">download</a></p>
+                                    </li>
+                                    <li>
+                                        <h3>"Activity Recognition Using Embedded Sensors in Smartphones", Bachelor CS (Advanced) Research Project by Leon Chea, 2015.</h3>
+                                        <p>This project explores the process of developing an Android system that utilises the embedded sensors in a smartphone to recognise a number of common human actions and postures (Standing, Sitting, Walking, Lying,...). Smartphones are a widely available commercial device and using it as a basis for this project creates the possibility of future widespread usage and potential applications. The sensors used include the accelerometer, gyroscope and magnetometer, all of which are commonly found in modern smartphones.</p>
+                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/1xrKPgkuyfY" frameborder="0" allowfullscreen></iframe></p>
+                                        <p><a href="//download.linayao.com/demos/Activity Recognition Using Embedded Sensors in Smartphones.mp4">download</a></p>
+                                    </li>
+                                    <li>
+                                        <h3>"Automatically Recognize Unhealthy Use of Smartphones", Bachelor CS (Advanced) Research Project by Yuchieh (Henry) Yang, 2015.</h3>
+                                        <p>This project explores an automated, objective and repeatable approach for assessing problematic usage via collecting a wide range of phone usage data from smartphones, identify a number of usage features that are relevant to this assessment, and build detection models automatically detecting problematic use. For example, using phones in the darkness. </p>
+                                        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/T6pPi0KDKXY" frameborder="0" allowfullscreen></iframe></p>
+                                        <p><a href="//download.linayao.com/demos/Automatically Recognize Unhealthy Use of Smartphones.mp4">download</a></p>
+                                    </li>
+                                </ul>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </post>
+        </div>
+        <div id="footer"></div>
+    </div>
+</div>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+    $("#navbar").load("navbar.html");
+    $("#footer").load("footer.html");
+</script>
+</body>
+</html>
+
