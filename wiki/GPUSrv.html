@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="insData, School of Computer Science and Engineering, UNSW Sydney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>insData Group</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="/beta/styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div id="navbar"></div>
+
+        <div class="demo-ribbon" style="background-image: url('img/gpu_server.jpg');background-size: cover;"></div>
+        <div class="content">
+            <div class="demo-container mdl-grid">
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <div class="mdl-shadow--2dp mdl-cell mdl-cell--8-col post">
+                    <div class="blog">
+                        <article>
+                            <h2 class="title-bg">Wiki of DrStrange:<br/>Group GPU Accelerated Computing Server</h2>
+                            <div class="post-content">
+                                <div class="post-body">
+                                    <p>Welcome to Wiki for <b>DrStrange</b>, the GPU accelerated computing server in the
+                                        <a href="http://www.cse.unsw.edu.au">School of Computer Science and
+                                            Engineering</a> at
+                                        the
+                                        <a href="http://www.unsw.edu.au">University of New South Wales</a>.
+                                        This page should include all basic things about the machine, and more are to be
+                                        added.
+                                    </p>
+
+                                    <b>Contents</b>
+                                    <ol>
+                                        <li><a href="#overview">Overview</a></li>
+                                        <li><a href="#start">Getting Started</a></li>
+                                        <ol>
+                                            <li><a href="#access">Accesing the Server</a></li>
+                                            <ol>
+                                                <li><a href="#ssh_key_gen">Generating SSH Key Pair</a></li>
+                                                <li><a href="#ssh_login">Login</a></li>
+                                            </ol>
+
+                                            <li><a href="#start_comp">Starting Computing</a></li>
+                                            <ol>
+                                                <li><a href="#screen">GNU Screen</a></li>
+                                                <li><a href="#gpustat">Checking GPU Status</a></li>
+                                                <li><a href="#gpumask">Masking GPUs</a></li>
+                                                <li><a href="#tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</a>
+                                                </li>
+                                                <li><a href="#userPip">Installing Python Packages in User's Home
+                                                    Directory with
+                                                    pip</a></li>
+                                            </ol>
+                                        </ol>
+                                    </ol>
+
+                                    <h4 id="overview">Overview</h4>
+                                    <p>DrStrange is a midrange system/ minicomputer customized and purchased for the
+                                        purpose of
+                                        conducting massive computing tasks for our own group, specifically floating
+                                        point
+                                        computation intensive deep learning tasks. It currently consists of 2 12-core/
+                                        24-thread
+                                        Intel(R) Xeon(R) CPU E5-2697 v2 CPUs, 6 NVIDIA TITAN X Pascal GPUs, a total 768
+                                        GiB
+                                        memory,
+                                        and an Intel P3608 SSD( 1.6TB, NVMe PCIe 3.0 X8 HET MLC) with
+                                        7 Seagate Enterprise Capacity 2.5 HDDs(2TB SATA 6Gb/s 7200rpm 128MB). DrStrange
+                                        runs
+                                        standard CentOS 7.
+                                    </p>
+                                    <p>
+                                        <b>Global Available software</b>:<br>
+                                        GNU GCC 4.8.5 <br>
+                                        Python 2.7/3.6 with Numpy 1.12.1 , pandas 0.20.1 , tensorflow-gpu 1.0.1 ,
+                                        scikit-tensor
+                                        0.1 ,
+                                        scipy 0.19.0<br>
+                                        openjdk 1.8.0_131
+                                    </p>
+
+
+                                    <h4 id="start">Getting Started</h4>
+                                    <h5 id="access">Accessing the Server</h5>
+                                    <p>DrStrange runs linux, the server can be accessed using
+                                        <a href="https://www.ssh.com/">SSH</a>, thus SSH client is required. Unix based
+                                        systems,
+                                        such as MacOS(Mac OS X), OpenBSD and most Linux distributions, usually already
+                                        have
+                                        OpenSSH
+                                        client included out of box. However, installation of one of such client on
+                                        Microsoft
+                                        Windows
+                                        systems is compulsory. SSH client can be found by your preference, yet here in
+                                        this
+                                        Wiki,
+                                        PuTTY is chosen for demonstration.
+                                    </p>
+                                    <p>
+                                        <b>Note:</b> Password authentication for SSH is disabled due to security
+                                        reasons. Public
+                                        key
+                                        for SSH is required to be sent to one of the administrators, by the time of
+                                        account
+                                        creation,
+                                        change of private key, or requesting authentication of new hosts( Copying
+                                        private key
+                                        file to
+                                        new hosts is also feasible to enable authentication, but not recommended).<br>
+                                        <a href="#ssh_key_gen"><b>Generate a key for SSH</b></a>
+                                    </p>
+
+                                    <b id="ssh_key_gen">Generating SSH Key Pair</b>
+                                    <p>If you don't have a key pair for SSH yet, please following the instructions to
+                                        generate
+                                        the
+                                        key pair. Otherwise, you can jump to <a href="#ssh_login"><b>Login</b></a>
+                                        section.
+                                    </p>
+                                    <p>Unix based systems aformentioned often have OpenSSH client bultin, which also
+                                        ususally
+                                        shipped with key generators, and its binary excutable is typically called
+                                        `ssh-keygen`.
+                                        A simple exmaple of usage can be as following:
+                                    </p>
+                                    <pre class="well">
+    $ ssh-keygen
+    Generating public/private rsa key pair.
+    Enter file in which to save the key (/home/USERNAME/.ssh/id_rsa):
+    Enter passphrase (empty for no passphrase):
+    Enter same passphrase again:
+    Your identification has been saved in /home/USERNAME/.ssh/id_rsa.
+    Your public key has been saved in /home/USERNAME/.ssh/id_rsa.pub.
+    The key fingerprint is:
+    00:50:7f:29:e2:2c:37:af:b2:8f:cf:e4:50:2f:c8:82 USERNAME@YOURCOMPUTER
+    The key's randomart image is:
+    +--[ RSA 2048]----+
+    |  .oo            |
+    |     o   .       |
+    |    . + o        |
+    |   o . +         |
+    |  . *   S        |
+    |.. = +           |
+    |E + o o          |
+    | ..* o           |
+    |  o=*            |
+    +-----------------+
+                            </pre>
+                                    <p>
+                                        Tutorial for "KEY GENERATOR FOR PUTTY ON WINDOWS" can be found
+                                        <a href="https://www.ssh.com/ssh/putty/windows/puttygen"
+                                           target="_blank">here</a>.
+                                    </p>
+
+                                    <b id="ssh_login">Login</b>
+                                    <p>This section is for ones not familar or have little with Linux systems.
+                                        Experienced users
+                                        can skip by clicking <a href="#start_comp">here</a> to start computing.
+                                    </p>
+                                    <pre class="well">
+    $ ssh USERNAME@drstrange.cse.unsw.edu.au
+                            </pre>
+                                    <p>As our server is authenticated by SSH keys, you would now logged in, and get
+                                        the message below:
+                                    <p/>
+                                    <pre class="well">
+            You are accesing a computer owned by:
+
+                    Service Oriented Computing Group,
+                School of Computer Science and Engineering,
+                UNSW Sydney
+
+            ***** This service is for authorised clients only *****
+
+     ****************************************************************************
+     *                                                                          *
+     * WARNING:     It is a criminal offence to:                                *
+     *                                                                          *
+     *              i.  Obtain access to data without permission                *
+     *                        (Penalty 2 years imprisonment)                    *
+     *              ii. Damage, delete, alter or insert data without permission *
+     *                        (Penalty 10 years imprisonment)                   *
+     *                                                                          *
+     ****************************************************************************
+    Last login: Tue Jul  4 15:56:25 2017 from WHO.KNOW.THIS.COMPUTER
+                            </pre>
+                                    <p>Tutorial for "How To Use SSH Keys with PuTTY (Windows users)" can be found
+                                        <a href="https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users"
+                                           target="_blank">
+                                            here
+                                        </a>.
+                                    </p>
+
+
+                                    <h5 id="start_comp">Starting Computing</h5>
+                                    <p>As the server is accessed via network, and connection outside CSE building can be
+                                        unstable,
+                                        let me first introduce you <a href="https://www.gnu.org/software/screen/">GNU
+                                            Screen</a>.
+                                    </p>
+                                    <b id="screen">GNU Screen</b>
+                                    <p> Screen is
+                                        a full-screen window manager that multiplexes a physical terminal between
+                                        several
+                                        processes,
+                                        typically interactive shells. Thus using Screen can help your remote processes
+                                        survive a
+                                        network disruption. Screen is installed on Drstrange, and you can simply fork
+                                        screen by
+
+                                    <pre>$ screen</pre>
+                                    a new shell ocuping the whole terminal window should appear, and don't panic, this
+                                    is a new
+                                    instance of shell forked by Screen, your jobs before is not killed and still
+                                    running. In
+                                    this
+                                    Screen-forked shell you can do things as ususal.<br>
+                                    The magic here is you can detach a Screen, and later reattach it. By default, a
+                                    Screen
+                                    session can be deattached by key combination <b>`Ctrl-a`</b> followed by <b>`d`</b>.<br>
+                                    To show a list of Screens invoked,
+                                    <pre>$ screen -ls</pre>
+                                    and it will give you an output similar to this:
+                                    <pre>
+    $screen -ls
+    There is a screen on:
+        11123.pts-1.drstrange	(Detached)
+    1 Socket in /var/run/screen/S-USERNAME.
+                            </pre>
+                                    In this example 11123 is the pid(Process ID) of the detached Screen, which can be
+                                    reattached
+                                    by
+                                    <pre>$ screen -r 11123</pre>
+                                    and screen with pid 11123 will be reattached, and display as full terminal windows
+                                    size.
+                                    </p>
+                                    <b id="gpustat">Checking GPU Status</b>
+                                    <p>It is generally recommended to check GPU status before running a gpu accelarated
+                                        program,
+                                        so
+                                        that we can avoid interrupting jobs owned by someone else. Also you may not want
+                                        to fork
+                                        your
+                                        job on a busy GPU unit. Check GPU status typically can be done by command <b>`nvidia-smi`</b>.
+                                        While here in our machine, a more user friendly python script is configured and
+                                        of which
+                                        the
+                                        usage is encouraged.<br>
+                                        You can check the usage by
+                                    <pre>$gpustat -cpu</pre>
+                                    which will give you <b>GPU number, GPU name, temprature, GPU ultilization rate,
+                                    memory
+                                    usage,
+                                    user, process name</b> accordingly in different colors.
+                                    </p>
+                                    <b id="gpumask">Masking GPUs</b>
+                                    <p>Some GPU programs are designed to utilize multiple GPUs, and this can largely
+                                        save time
+                                        consumed on trainning massive models. Somehow this often preventing other users
+                                        from
+                                        conducting experiments, especially TensorFlow based ones, which are by default
+                                        allocating
+                                        all available memory at start. As our machine have 6 NVIDIA Titan X pascal GPUs,
+                                        which
+                                        is
+                                        quite powerful, using all 6 GPUs at once is often over-kill. To avoid such
+                                        situation, a
+                                        mask
+                                        can be introduced: <b>`CUDA_VISIBLE_DEVICES`</b>.<br>
+                                        `CUDA_VISIBLE_DEVICES` is an environment variable, which can be simply added in
+                                        frot of
+                                        linux commands at each run. Syntax can be:
+                                    <pre>
+    CUDA_VISIBLE_DEVICES=1      //Only device 1 will be seen
+    CUDA_VISIBLE_DEVICES=0,1    //Devices 0 and 1 will be visible
+    CUDA_VISIBLE_DEVICES=”0,1”  //Same as above, quotation marks are optional
+    CUDA_VISIBLE_DEVICES=0,2,3  //Devices 0, 2, 3 will be visible; device 1, 4, 5 is masked
+                                 </pre>
+                                    For example, you have a python script call <b>`eg.py`</b>, which you want spawn it
+                                    only on
+                                    <b>`GPU device 0`</b>, this can be done via:
+                                    <pre>$ CUDA_VISIBLE_DEVICES=0 python eg.py</pre>
+                                    </p>
+
+                                    <b id="tf_mem_growth">TensorFLow: Allowing GPU Memory Growth</b>
+                                    <p>Since Tensorflow is considerably popular in our group and many have not programed
+                                        properly with it
+                                        so far, I feel necessary to propose another handy way to use GPU resource more
+                                        efficiently,
+                                        that is to control the usage of memory, to only grow the memory usage as is
+                                        needed by
+                                        the process.
+                                        This can be done by set parameter <b>`allow_growth`</b> to be <b>`True`</b> when
+                                        starting the
+                                        session.
+                                    <pre>
+    config = tf.ConfigProto()
+    config.gpu_options.allow_growth = True
+    session = tf.Session(config=config, ...)
+                            </pre>
+                                    Also, a <b>`per_process_gpu_memory_fraction`</b> option setting up limit of memory
+                                    usage of
+                                    process
+                                    is also quite handy, especially used along with <b>`CUDA_VISIBLE_DEVICES`</b>. An
+                                    example to
+                                    only
+                                    allocate 40% of the total memory of each GPU can be:
+                                    <pre>
+    config = tf.ConfigProto()
+    config.gpu_options.per_process_gpu_memory_fraction = 0.4
+    session = tf.Session(config=config, ...)
+                            </pre>
+
+                                    More details are available
+                                    <a href="https://www.tensorflow.org/tutorials/using_gpu#allowing_gpu_memory_growth"
+                                       target="_blank">
+                                        here
+                                    </a>.
+                                    You may also find <a href="https://petewarden.com/" target="_blank">Pete Warden's
+                                    blog</a>
+                                    interesting.
+                                    </p>
+
+                                    <b id="userPip">Installing Python Packages in User's Home Directory with pip</b>
+                                    <p>As users on DrStrange normally have no privilege permission( or known as "root"),
+                                        global
+                                        installation
+                                        of Python packages is not practical. Yet enquiry or suggestion on installing
+                                        common
+                                        useful packages
+                                        are encouraged to send to administrators or me Chaoran myself, it is also very
+                                        handy at
+                                        many times,
+                                        to install packages under users' home themselves, which requires no privilege
+                                        permission, and affect
+                                        nothing on others. <br>
+                                        This can be done easily by adding a <b>`--user`</b> option to a normal
+                                        pip3(pip2)
+                                        command. For example:
+                                    <pre>$ pip3 install --user [PACKAGE_NAME]</pre>
+                                    where <b>`[PACKAGE_NAME]`</b> is the one you want to install.
+                                    </p>
+
+                                </div>
+
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+            </post>
+        </div>
+        <div id="footer"></div>
+    </div>
+</div>
+
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+    $("#navbar").load("/beta/navbar.html");
+    $("#footer").load("/beta/footer.html");
+</script>
+</body>
+</html>

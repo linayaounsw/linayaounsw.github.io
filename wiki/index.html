@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="insData, School of Computer Science and Engineering, UNSW Sydney">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>insData Group</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        #view-source {
+            position: fixed;
+            display: block;
+            right: 0;
+            bottom: 0;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            z-index: 900;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div id="navbar"></div>
+        <div class="content">
+            <p class="mdl-typography--display-2"><br/> Group Wikis</p>
+
+            <div class="mdl-typography--display-1">
+                <ul class="mdl-list">
+                    <a href="slides.html">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                 <i class="material-icons mdl-list__item-avatar">person</i>
+                                <span>Reading and Learning Group Slides</span>
+                                <span class="mdl-list__item-text-body">
+                                    Archives of presented slides for reading and learning group activity of our own group. Coordinated by Manqing Dong and Xiang Zhang.
+                                </span>
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="tutorial_ML4B.html">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons  mdl-list__item-avatar">person</i>
+                                <span>Machine Learning Tutorial for Beginners</span>
+                                <span class="mdl-list__item-text-body">
+                                    06/03/17 by Guangyang Qi
+                                </span>
+                            </span>
+                        </li>
+                    </a>
+
+                    <a href="GPUSrv.html">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="material-icons  mdl-list__item-avatar">person</i>
+                                <span>Wiki of DrStrange: Group GPU Accelerated Computing Server</span>
+                                <span class="mdl-list__item-text-body">
+                                    03/07/17 by Chaoran Huang
+                                </span>
+                            </span>
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</div>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<script>
+    $("#navbar").load("/beta/navbar.html");
+    $("#footer").load("/beta/footer.html");
+</script>
+</body>
+</html>
