@@ -23,10 +23,6 @@
     <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
-  </component>
   <component name="ProjectId" id="1OdQP289vDdj53vjTdnOFqKlc7u" />
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -82,7 +78,7 @@
       <workItem from="1564304969250" duration="182000" />
       <workItem from="1564316547743" duration="318000" />
       <workItem from="1564318138634" duration="27000" />
-      <workItem from="1564321683510" duration="240000" />
+      <workItem from="1564321683510" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -266,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564321788809</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Chaoran: redirection">
+      <created>1564321931276</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1564321931276</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
