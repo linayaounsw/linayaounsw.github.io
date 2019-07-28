@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: fix navbar">
+    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/people.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +79,7 @@
       <workItem from="1507010372774" duration="45000" />
       <workItem from="1508729762249" duration="147000" />
       <workItem from="1564239559944" duration="594000" />
-      <workItem from="1564304969250" duration="27000" />
+      <workItem from="1564304969250" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -234,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564239909657</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Chaoran: fix">
+      <created>1564305023306</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1564305023306</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +302,7 @@
     <MESSAGE value="Chaoran: add pete warden's blog in terms of tensorflow" />
     <MESSAGE value="Chaoran: update example of pip" />
     <MESSAGE value="Chaoran: fix navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: fix navbar" />
+    <MESSAGE value="Chaoran: fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: fix" />
   </component>
 </project>
