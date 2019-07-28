@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: redirection">
+    <list default="true" id="9a8aca04-f65a-446d-932e-bd277dd159fe" name="Default" comment="Chaoran: fixing redirection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -78,7 +78,7 @@
       <workItem from="1564304969250" duration="182000" />
       <workItem from="1564316547743" duration="318000" />
       <workItem from="1564318138634" duration="27000" />
-      <workItem from="1564321683510" duration="359000" />
+      <workItem from="1564321683510" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="Reading grouo update 03-Apr-2017">
       <created>1491191454502</created>
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564321931276</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Chaoran: fixing redirection">
+      <created>1564322056881</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1564322056881</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +338,7 @@
     <MESSAGE value="Chaoran: fix navbar" />
     <MESSAGE value="Chaoran: fix" />
     <MESSAGE value="Chaoran: redirection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: redirection" />
+    <MESSAGE value="Chaoran: fixing redirection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chaoran: fixing redirection" />
   </component>
 </project>
